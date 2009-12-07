@@ -1,0 +1,5 @@
+See fonts/LICENSE for licenses applying to the fonts/ directory.
+
+All other content in this repository, is published under the CC-By 3.0 License:
+  http://creativecommons.org/licenses/by/3.0/
+Copyright 2009 Nicolas Dumazet - <nidumz@gmail.com>

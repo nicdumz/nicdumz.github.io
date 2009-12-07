@@ -1,0 +1,1 @@
+Purisa is a debian font distributed under the GNU GPL License.
