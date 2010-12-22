@@ -10,16 +10,29 @@
 </head>
 
 <body>
-    <div id="header">
-        <%include file="header.mako" />
-    </div>
-    <div id="container">
-        <div id="content">
-            ${next.body()}
+    <div id="content">
+        <div id="header">
+            ${self.header()}
         </div>
-        <div id="footer">
-            <%include file="footer.mako" />
+        <div id="all_but_header">
+            <div id="main_block">
+                <div id="prose_block">
+                    ${next.body()}
+                </div>
+                ${self.sidebar()}
+            </div>
+            <div id="footer">
+                ${self.footer()}
+            </div>
         </div>
     </div>
 </body>
 </html>
+<%def name="header()">
+  <%include file="header.mako" />
+</%def>
+<%def name="footer()">
+  <%include file="footer.mako" />
+</%def>
+<%def name="sidebar()">
+</%def>

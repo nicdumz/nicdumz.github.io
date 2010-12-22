@@ -46,7 +46,7 @@ img.menu-item {
     margin-left: 1px;
 }
 
-div#container {
+div#all_but_header {
     position:absolute;
     top:25%;
     width:100%;
@@ -55,7 +55,7 @@ div#container {
     height:75%;
     min-height:75%;
 }
-div#content {
+div#prose_block {
     text-align:right;
     color: white;
     padding-top:4%;
