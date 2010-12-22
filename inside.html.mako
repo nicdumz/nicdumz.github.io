@@ -34,17 +34,7 @@
 <p>Praesent quis felis quam, a iaculis ante. Curabitur pellentesque iaculis lorem, a pellentesque erat feugiat et. Phasellus erat lectus, porttitor vel ullamcorper sit amet, interdum non odio. Mauris leo ligula, posuere et mollis eu, malesuada ac tortor. Cras tellus est, interdum vel molestie vitae, semper id diam. Fusce eros tortor, bibendum a adipiscing non, luctus sit amet urna. Nullam vitae lacus magna, quis posuere tellus. Morbi sit amet felis elit, non tincidunt risus. Integer ac massa sem. Praesent urna leo, interdum ut sodales at, consequat nec tortor.</p>
 </div>
 <div id="footer">
-  <img id="footer-date" alt="2009" src="images/2009.png"/>
-  <div id="footer-about">
-    <a href="about.html">
-      <img title="About this website" alt="*" src="images/about.png"/>
-    </a>
-  </div>
-  <div id="footer-cc">
-    <a href="http://creativecommons.org">
-      <img alt="Creative Commons Logo" title="HTML, CSS and texts under Creative Commons-By 3.0" src="images/cc.png"/>
-    </a>
-  </div>
+    <%include file="_templates/footer.mako" />
 </div>
 
 </div>
