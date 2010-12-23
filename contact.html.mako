@@ -1,3 +1,6 @@
+<%!
+title = "Contact me"
+%>
 <%inherit file="_templates/main.mako" />
 <div style="text-align:center;">
 <p><i>Here</i>, enjoy this set of social networking icons:</p>
