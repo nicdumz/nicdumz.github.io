@@ -20,6 +20,10 @@ body {
     outline: 0px;
 }
 
+a:link {
+    color: #2277FF;
+}
+
 div#header {
     position: absolute;
     top:0;
