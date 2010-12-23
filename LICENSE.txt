@@ -1,5 +1,8 @@
-See fonts/LICENSE for licenses applying to the fonts/ directory.
-
-All other content in this repository, is published under the CC-By 3.0 License:
+Unless specified otherwise, content in this repository is published under
+the CC-By 3.0 License:
   http://creativecommons.org/licenses/by/3.0/
-Copyright 2009 Nicolas Dumazet - <nidumz@gmail.com>
+Copyright 2009-2010 Nicolas Dumazet - <nidumz@gmail.com>
+
+If a directory contains a LICENSE.txt, it supersedes this top-level file.
+Generally speaking, I am very flexible: if you want me to release some
+content (on which I own copyrights) under another license, just ask.
