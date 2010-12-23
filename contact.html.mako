@@ -2,7 +2,7 @@
 title = "Contact me"
 %>
 <%inherit file="_templates/main.mako" />
-<div style="text-align:center;">
+<div style="text-align:center; vertical-align:middle; margin-top:10%; ">
 <p><i>Here</i>, enjoy this set of social networking icons:</p>
 <p>
     <a href="http://linkedin.com/in/nicdumz" alt="linkedin profile"><img src="images/pagepeel/linkedin_64x64.png"></a>
@@ -10,8 +10,6 @@ title = "Contact me"
     <a href="http://facebook.com/nicdumz" alt="facebook profile"><img src="images/pagepeel/facebook_64x64.png"></a>
 </p>
 <p>
-    <a href='https://www.ohloh.net/accounts/17627?ref=Detailed'>
-      <img alt='Ohloh profile for Nicolas Dumazet' height='35' src='https://www.ohloh.net/accounts/17627/widgets/account_detailed.gif' width='191' />
-    </a>
+    email: <p>nicdumz () common-free-webmail-from-mountain-view</p>
 </p>
 </div>
