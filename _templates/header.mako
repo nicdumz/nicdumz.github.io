@@ -8,7 +8,7 @@
     <a href="#">
       <img class="menu-item" alt="Open Source" src="images/opensource.png"/>
     </a>
-    <a href="contact.html">
+    <a href="contact.html" alt="Contact me">
       <img class="menu-item" alt="Contact" src="images/contact.png"/>
     </a>
   </div>
