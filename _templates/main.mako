@@ -9,6 +9,7 @@ title = "Nicolas Dumazet"
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>${self.attr.title}</title>
 
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
 
