@@ -40,11 +40,6 @@ img#title {
     margin-left: 70px;
     bottom: 0%;
 }
-div#menu-container {
-    position: absolute;
-    right: 326px;
-    bottom: 0%;
-}
 img.menu-item {
     position: absolute;
     bottom: 0px;
