@@ -5,8 +5,6 @@
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
     border: 0;
 }
 body {
@@ -14,7 +12,7 @@ body {
     color: white;
     height: 100%;
     width: 100%;
-    font-family: Purisa, Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 :focus {
     outline: 0px;
@@ -27,6 +25,7 @@ a:link {
 div#header {
     position: absolute;
     top:0;
+    left:0;
     height: 25%;
     width: 100%;
 
@@ -34,6 +33,8 @@ div#header {
     background-color: white;
 
     border-bottom: 2px solid #888888;
+    margin:0;
+    padding:0;
 }
 img#title {
     position: absolute;
@@ -59,19 +60,21 @@ div#all_but_header {
     height:75%;
     min-height:75%;
 }
-div#prose_block {
+div#prose_block_nonblog {
     text-align:right;
     color: white;
     padding-top:4%;
     padding-bottom: 70px;
     padding-left: 10%;
     padding-right: 8%;
+    font-family: Purisa, Arial, Helvetica, sans-serif;
 }
 div#footer {
     height: 45px;
     width: 100%;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 img#footer-date {
     position: absolute;
