@@ -93,3 +93,6 @@ div#footer-about {
     height: 35px;
     margin:auto;
 }
+img.rss-icon {
+    vertical-align: middle;
+}

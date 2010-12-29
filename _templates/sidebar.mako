@@ -1,7 +1,9 @@
 <div id="right_sidebar">
   <div id="contact">
-  <h3>Contact</h3>
-    dum dim dum 
+  <h3>Meta</h3>
+    <ul>
+    <li> <img src="/images/generic/bullet-feed.png" class="rss-icon"> <a href="/blog/feed/index.xml" alt="RSS feed">RSS entries</a> </li>
+    </ul>
   </div>
   <div id="blog_post_list">
   <h3>Latest blog posts</h3>
@@ -20,7 +22,7 @@
     <h3>Categories</h3>
     <ul>
 % for category, num_posts in bf.config.blog.all_categories:
-     <li><a href="${category.path}">${category}</a> (<a href="${category.path}/feed">rss</a>) (${num_posts})</li>
+     <li><a href="${category.path}">${category}</a> (<a href="${category.path}/feed/index.xml">rss</a>) (${num_posts})</li>
 % endfor
     </ul>
   </div> 
