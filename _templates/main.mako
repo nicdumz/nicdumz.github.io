@@ -12,7 +12,7 @@ prose_id = "prose_block_nonblog"
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="${bf.config.site.url}/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
     ${self.head()}
 </head>
