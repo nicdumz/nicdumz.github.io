@@ -1,3 +1,6 @@
+Most code is derived from the Blogofile sources, originally written by Ryan
+McGuire and published under the MIT license.
+
 Unless specified otherwise, content in this repository is published under
 the CC-By 3.0 License:
   http://creativecommons.org/licenses/by/3.0/
