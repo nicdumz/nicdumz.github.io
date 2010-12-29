@@ -32,21 +32,22 @@ div#header {
     min-height:110px;
 
     border-bottom: 2px solid #888888;
-    margin:0;
+    margin:0 auto;
     padding:0;
 }
 img#title {
     position: absolute;
-    left: 5%;
+    margin-left: 70px;
     bottom: 0%;
 }
 div#menu-container {
     position: absolute;
-    right: 20%;
+    right: 326px;
     bottom: 0%;
 }
 img.menu-item {
-    float: left;
+    position: absolute;
+    bottom: 0px;
     margin-left: 1px;
 }
 
