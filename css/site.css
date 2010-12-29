@@ -103,6 +103,9 @@ div.blog_post small a:hover {
 body code {
     font-family: Monaco, ProFont, "Bitstream Vera Sans Mono", "American Typewriter", "Andale Mono", monospace;
 }
+#disqus_thread {
+    margin-top: 30px;
+}
 .post_prose a {
     color:#0B76AE;
     text-decoration:none;
