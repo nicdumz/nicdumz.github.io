@@ -1,9 +1,6 @@
-<%inherit file="main.mako" />
-<%def name="sidebar()">
-  <%include file="sidebar.mako" />
-</%def>
+<%inherit file="blog.mako" />
 <%def name="head()">
-  <%include file="bloghead.mako" />
+  ${parent.head()}
   <script type="text/javascript">
   var disqus_url   = "${post.permalink}";
   var disqus_title = "${post.title}";

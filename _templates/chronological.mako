@@ -1,10 +1,4 @@
-<%inherit file="main.mako" />
-<%def name="sidebar()">
-  <%include file="sidebar.mako" />
-</%def>
-<%def name="head()">
-  <%include file="bloghead.mako" />
-</%def>
+<%inherit file="blog.mako" />
 % for post in posts:
   <%include file="post.mako" args="post=post" />
 % if bf.config.blog.disqus.enabled:
