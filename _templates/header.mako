@@ -3,7 +3,7 @@
   </a>
   <div id="menu-container">
     <a href="/blog/">
-      <img class="menu-item" alt="My Job" src="/images/myblog.png"/>
+      <img class="menu-item" alt="My Blog" src="/images/blog.png"/>
     </a>
     <a href="#">
       <img class="menu-item" alt="Open Source" src="/images/opensource.png"/>
