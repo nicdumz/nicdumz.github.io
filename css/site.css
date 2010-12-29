@@ -50,6 +50,7 @@ div.post_prose {
     line-height:1.6em;
 }
 .blog_post_header {
+    margin-bottom: 20px;
 }
 .blog_post small {
     font-family:Arial,Helvetica,Sans-Serif;
@@ -85,7 +86,7 @@ h2.blog_post_title a:hover {
 }
 h2.blog_post_title a {
     color:#0090DA;
-    font-size:18px;
+    font-size:1.1em;
     font-weight:normal;
     margin:50px 0 0;
     padding:0;
@@ -98,6 +99,9 @@ div.blog_post small a:hover {
 .post_prose a:hover {
     background:#0090DA none repeat scroll 0 0;
     color:white;
+}
+body code {
+    font-family: Monaco, ProFont, "Bitstream Vera Sans Mono", "American Typewriter", "Andale Mono", monospace;
 }
 .post_prose a {
     color:#0B76AE;
@@ -112,6 +116,10 @@ div.blog_post small a:hover {
 }
 .post_prose p a.paragraph_permalink:hover {
     background: white none repeat scroll 0 0;
+}
+.post_prose h1 {
+    color: #F60;
+    font-size:1.6em;
 }
 div.after_post {
     margin-top: 50px;
