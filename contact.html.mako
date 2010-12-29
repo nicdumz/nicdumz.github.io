@@ -1,6 +1,5 @@
 <%!
 title = "Contact me"
-prose_id = "prose_block_nonblog"
 %>
 <%inherit file="_templates/main.mako" />
 <div style="text-align:center; vertical-align:middle; margin-top:10%; ">

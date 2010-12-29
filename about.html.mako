@@ -1,6 +1,5 @@
 <%!
 title = "About this website"
-prose_id = "prose_block_nonblog"
 %>
 <%inherit file="_templates/main.mako" />
 <p>This website is hosted on <a href="http://www.webfaction.com">Webfaction</a>.</p>

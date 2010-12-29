@@ -1,9 +1,9 @@
 <%!
 title = "Nicolas Dumazet"
-prose_id = "prose_block"
 dark = dict(header_color="white", body_color="black", font_color="white")
 light = dict(header_color="black", body_color="white", font_color="black")
 style = dark
+prose_id = "prose_block_nonblog"
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
