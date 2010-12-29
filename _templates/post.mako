@@ -20,7 +20,7 @@ post_id = re.sub("[ ?]","-",post.title.lower()) %>
   %>
   ${", ".join(category_links)}
   % if bf.config.blog.disqus.enabled:
-   | <a href="${post.permalink}#disqus_thread">View Comments</a>
+   | <a class="disqus-link" href="${post.permalink}#disqus_thread">View Comments</a>
   % endif
     </small>
   </div>

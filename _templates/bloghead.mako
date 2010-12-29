@@ -11,4 +11,7 @@ href="${bf.util.site_path_helper(bf.config.blog.path,'/feed/atom')}" />
 
 <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" src="/js/jquery.disqus.js"></script>
+<script type="text/javascript" src="/js/prettify-min.js"></script>
+<script type="text/javascript" src="/js/showdown-min.js"></script>
 <script type="text/javascript" src="/js/site.js"></script>
