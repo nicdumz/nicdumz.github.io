@@ -27,6 +27,8 @@ a {
 }
 /********** Main Block **********/
 div#main_block {
+    margin: auto;
+    width: 1100px;
 }
 div#prose_block {
     float: left;

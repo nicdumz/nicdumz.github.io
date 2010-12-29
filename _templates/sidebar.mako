@@ -1,3 +1,4 @@
+<div class="right_sidebar">
 <div id="right_sidebar">
   <div id="contact">
   <h3>Meta</h3>
@@ -35,4 +36,5 @@
     </ul>
   </div>
 
+</div>
 </div>
