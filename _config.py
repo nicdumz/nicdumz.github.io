@@ -19,7 +19,7 @@ blog.enabled = True
 
 blog.path = "/blog"
 
-blog.name        = "Blog"
+blog.name        = "Nicolas Dumazet - Blog"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
@@ -104,6 +104,7 @@ blog.post_default_filters = {
 
 
 site.file_ignore_patterns += [
+  ".*/FONTS.txt",
   ".*/LICENSE.txt",
   "^svgs/",
 ]
