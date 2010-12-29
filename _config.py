@@ -107,5 +107,6 @@ site.file_ignore_patterns += [
   ".*/FONTS.txt",
   ".*/LICENSE.txt",
   ".*/README.txt",
+  "Makefile",
   "^svgs/",
 ]
