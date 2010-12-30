@@ -6,7 +6,7 @@ base = 1100 - (270 + 10*2 + 1)
 %>
 <%page args="variant=''" />
  <div style="width:1100px; margin: 0 auto;">
-  <a href="/inside.html" alt="Got to site root">
+  <a href="/inside.html" name="Got to site root">
       <img id="title" alt="Nicolas Dumazet" title="a.k.a. NicDumZ" src="/images/generic/ndumazet${variant}.png"/>
   </a>
     <a href="/blog/">

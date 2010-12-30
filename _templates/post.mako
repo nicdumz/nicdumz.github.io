@@ -2,7 +2,9 @@
 
 <% 
 import re
-post_id = re.sub("[ ?]","-",post.title.lower()) %>
+post_id = re.sub("[ ?]","-",post.title.lower())
+post_id = re.sub("[.!,]","",post_id)
+%>
 
 <div class="blog_post" id="${post_id}">
   <div class="blog_post_header">

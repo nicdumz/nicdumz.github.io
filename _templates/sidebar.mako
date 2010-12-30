@@ -3,7 +3,7 @@
   <div id="contact">
   <h3>Meta</h3>
     <ul>
-    <li> <img src="/images/generic/bullet-feed.png" class="rss-icon"> <a href="/blog/feed/index.xml" alt="RSS feed">RSS entries</a> </li>
+    <li> <img src="/images/generic/bullet-feed.png" class="rss-icon" alt="feed icon" /> <a href="/blog/feed/index.xml" alt="RSS feed">RSS entries</a> </li>
     </ul>
   </div>
   <div id="blog_post_list">
