@@ -32,6 +32,7 @@ div#prose_block h2.intrablog {
 div.post_prose {
     font-size:13px;
     line-height:1.6em;
+    font-family: Palatino, Georgia, "Times New Roman", Times, serif;
 }
 .blog_post_header {
     margin-bottom: 20px;
@@ -69,8 +70,9 @@ h2.blog_post_title a:hover {
     color:#6EB9E0;
 }
 h2.blog_post_title a {
+    font-family: Palatino, Georgia, "Times New Roman", Times, serif;
     color:#0090DA;
-    font-size:1.1em;
+    font-size:1.3em;
     font-weight:normal;
     margin:50px 0 0;
     padding:0;
