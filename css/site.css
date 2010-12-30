@@ -21,7 +21,6 @@ div#prose_block {
 div#prose_block h2 {
     font-size:18px;
     font-weight:normal;
-    margin:50px 0 0;
     padding:0;
     text-decoration:none;
 }
@@ -65,6 +64,9 @@ div.blog_post {
     background: transparent;
     border:none;
 }
+h2.blog_post_title {
+    margin:50px 0 0;
+}
 h2.blog_post_title a:hover {
     background:transparent none repeat scroll 0 0;
     color:#6EB9E0;
@@ -96,6 +98,14 @@ body code {
     color:#0B76AE;
     text-decoration:none;
 }
+.post_prose code {
+    border: 1px solid #d40055;
+    background-color: #eee;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
 .post_prose p a.paragraph_permalink {
     color: red;
     visibility : hidden;
@@ -109,6 +119,9 @@ body code {
 .post_prose h1 {
     color: #F60;
     font-size:1.6em;
+}
+.post_prose h2 {
+    font-size:1.5em;
 }
 div.after_post {
     margin-top: 50px;
