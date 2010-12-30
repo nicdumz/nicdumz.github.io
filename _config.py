@@ -56,7 +56,7 @@ blog.disqus.name    = "nicdumz"
 # or, make your own: http://pygments.org/docs/styles
 filters.syntax_highlight.style   = "monokai"
 filters.syntax_highlight.css_dir = "/css"
-filters.syntax_highlight.preload_styles = ["emacs", "murphy","monokai"]
+filters.syntax_highlight.preload_styles = ["monokai",]
 #### Custom blog index ####
 # If you want to create your own index page at your blog root
 # turn this on. Otherwise blogofile assumes you want the
@@ -108,6 +108,6 @@ site.file_ignore_patterns += [
   ".*/FONTS.txt",
   ".*/LICENSE.txt",
   ".*/README.txt",
-  "Makefile",
+  ".*/Makefile",
   "^svgs/",
 ]
