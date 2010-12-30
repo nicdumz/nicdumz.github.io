@@ -6,7 +6,7 @@ AddType application/rss+xml .xml
 AddDefaultCharset utf-8
 
 # month
-<FilesMatch "\.(gif|jpg|jpeg|png|ico)$">
+<FilesMatch "\.(gif|jpg|jpeg|png|ico|eot|ttf)$">
    Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 
@@ -18,4 +18,9 @@ AddDefaultCharset utf-8
 # hour
 <FilesMatch "\.(html|htm)$">
    Header set Cache-Control "max-age=3600, public"
+</FilesMatch>
+
+# a year for jquery libs: they wont ever change
+<FilesMatch "jquery\..*\.js$">
+   Header set Cache-Control "max-age=29030400. public"
 </FilesMatch>
