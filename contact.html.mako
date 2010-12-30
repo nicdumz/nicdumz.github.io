@@ -10,6 +10,6 @@ title = "Contact me"
     <a href="http://facebook.com/nicdumz" title="facebook profile"><img src="/images/generic/pagepeel/facebook_64x64.png" alt="facebook"/></a>
 </p>
 <p>
-    email: <p>nicdumz () common-free-webmail-from-mountain-view</p>
+    email: <br />nicdumz () common-free-webmail-from-mountain-view
 </p>
 </div>
