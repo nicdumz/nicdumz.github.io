@@ -41,7 +41,8 @@ blog.posts_per_page = 5
 # :filename           -> article's filename without suffix
 blog.auto_permalink.enabled = True
 # This is relative to site_url
-blog.auto_permalink.path    = "/blog/:year/:month/:day/:title"
+blog.auto_permalink.path    = "/blog/:year/:month/:title"
+blog.post.date_format = '%d/%m/%Y %H:%M'
 
 ######################################################################
 # Intermediate Settings
