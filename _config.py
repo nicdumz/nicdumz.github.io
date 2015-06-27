@@ -13,7 +13,7 @@ logger = logging.getLogger("blogofile.config")
 site.url         = "http://nicdumz.fr"
 
 #### Blog Settings ####
-blog = controllers.blog
+blog = plugins.blog
 
 blog.enabled = True
 
@@ -92,7 +92,7 @@ blog.category_dir = "category"
 ######################################################################
 
 #### Default post filters ####
-# If a post does not specify a filter chain, use the 
+# If a post does not specify a filter chain, use the
 # following defaults based on the post file extension:
 blog.post_default_filters = {
     "markdown": "syntax_highlight, markdown",
