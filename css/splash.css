@@ -1,0 +1,34 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+  background-color: black;
+}
+body * {
+  position: absolute;
+}
+:focus {
+  outline: 0px;
+}
+div#top {
+  width:90%;
+  padding-left:10%;
+  top: 0%;
+  height: 35%;
+  border-bottom: white solid 3px;
+}
+div#top img#main-title {
+  bottom: 0;
+}
+img#aka-nicdumz {
+  top: 38%;
+  left: 18%;
+}
+a#init {
+  right: 15%;
+  bottom: 25%;
+}
+a#init img{
+  position:relative;
+}
+

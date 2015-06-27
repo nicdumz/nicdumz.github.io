@@ -5,45 +5,13 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self'; child-src 'none'; object-src 'none'; script-src 'self' *.google-analytics.com">
 <title>Nicolas Dumazet</title>
 
-<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/css/splash.css" type="text/css" />
 
-<style type="text/css">
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0;
-  background-color: black;
-}
-body * {
-  position: absolute;
-}
-:focus {
-  outline: 0px;
-}
-div#top {
-  width:90%;
-  padding-left:10%;
-  top: 0%;
-  height: 35%;
-  border-bottom: white solid 3px;
-}
-div#top img#main-title {
-  bottom: 0;
-}
-img#aka-nicdumz {
-  top: 38%;
-  left: 18%;
-}
-a#init {
-  right: 15%;
-  bottom: 25%;
-}
-a#init img{
-  position:relative;
-}
-</style>
 </head>
 
 <body>
