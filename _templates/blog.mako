@@ -1,7 +1,5 @@
 <%!
-light = dict(header_color="black", body_color="white", font_color="black")
-style = light
-black = "-black"
+style = "light"
 prose_id = "prose_block"
 %>
 <%inherit file="main.mako" />

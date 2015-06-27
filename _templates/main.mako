@@ -1,8 +1,6 @@
 <%!
 title = "Nicolas Dumazet"
-dark = dict(header_color="white", body_color="black", font_color="white")
-light = dict(header_color="black", body_color="white", font_color="black")
-style = dark
+style = "dark"
 prose_id = "prose_block_nonblog"
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -25,10 +23,10 @@ prose_id = "prose_block_nonblog"
 <body>
 
     <div id="content">
-        <div id="header" style="background-color: ${self.attr.style['header_color']};">
+        <div id="header" class="${self.attr.style}-header">
             ${self.header()}
         </div>
-        <div id="all_but_header" style="background-color: ${self.attr.style['body_color']}; color: ${self.attr.style['font_color']};">
+        <div id="all_but_header" class="${self.attr.style}-all-but-header">
             <div id="main_block">
                 <div id="${self.attr.prose_id}">
                     ${next.body()}

@@ -2,7 +2,7 @@
 title = "Contact me"
 %>
 <%inherit file="_templates/main.mako" />
-<div style="text-align:center; vertical-align:middle; margin-top:10%; ">
+<div id="contact">
 <p><i>Here</i>, enjoy this set of social networking icons:</p>
 <p>
     <a href="http://linkedin.com/in/nicdumz" title="linkedin profile"><img src="/images/generic/icons-pagepeel/linkedin_64x64.png" alt="linkedin"/></a>
