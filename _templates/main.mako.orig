@@ -17,9 +17,10 @@ prose_id = "prose_block_nonblog"
 
     <link rel="shortcut icon" href="${bf.config.site.url}/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
-    <script type="text/javascript" async src="/js/analytics.js"></script>
-    <script type="text/javascript" async src="//${bf.config.blog.disqus.name}.disqus.com/count.js"></script>
     ${self.head()}
+
+  <script type="text/javascript" src="/js/disqus-no-inline-script.js"></script>
+  <script type="text/javascript" async src="/js/analytics.js"></script>
 </head>
 
 <body>
