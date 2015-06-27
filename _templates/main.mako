@@ -15,10 +15,11 @@ prose_id = "prose_block_nonblog"
     <link rel="shortcut icon" href="${bf.config.site.url}/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
     ${self.head()}
-<%include file="analytics.mako" />
 </head>
 
 <body>
+  <script type="text/javascript" async src="/js/analytics.js"></script>
+
     <div id="content">
         <div id="header" style="background-color: ${self.attr.style['header_color']};">
             ${self.header()}

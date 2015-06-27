@@ -44,10 +44,11 @@ a#init img{
   position:relative;
 }
 </style>
-<%include file="_templates/analytics.mako" />
 </head>
 
 <body>
+  <script type="text/javascript" async src="/js/analytics.js"></script>
+
   <div id="top">
     <img id="main-title" alt="Nicolas Dumazet" src="/images/generic/maintitle.png"/>
   </div>
