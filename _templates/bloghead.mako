@@ -8,7 +8,4 @@ href="${bf.util.site_path_helper(bf.config.blog.path,'/feed/atom/index.xml')}" /
 % endfor
 <link rel='stylesheet' href='/css/site.css' type='text/css' />
 
-<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="/js/jquery.tweet.js"></script>
-<script type="text/javascript" src="/js/jquery.disqus.js"></script>
-<script type="text/javascript" src="/js/site.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
