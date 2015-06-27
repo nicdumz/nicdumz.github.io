@@ -12,6 +12,9 @@ prose_id = "prose_block_nonblog"
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 
+    <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; child-src disqus.com; object-src 'none'; style-src 'self' 'unsafe-inline' *.disquscdn.com; img-src 'self *.disqus.com *.disquscdn.com *.nicdumz.fr; script-src 'self' *.google-analytics.com *.search.twitter.com *.disqus.com *.disquscdn.com">
+
     <link rel="shortcut icon" href="${bf.config.site.url}/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
     ${self.head()}
