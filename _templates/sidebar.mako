@@ -14,11 +14,6 @@
 % endfor
   </ul>
   </div>
-  <div id="on_twitter">
-    <h3>On Twitter <small>instant rants</small></h3>
-    <div id="nicdumz_tweets"></div>
-    <a href="http://twitter.com/nicdumz" style="float: right">See more tweets</a>
-  </div>
   <div id="categories">
     <h3>Categories</h3>
     <ul>
