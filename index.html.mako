@@ -5,8 +5,6 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta http-equiv="Content-Security-Policy"
-content="default-src 'self'; child-src 'none'; object-src 'none'; script-src 'self' *.google-analytics.com; img-src 'self' *.google-analytics.com">
 <title>Nicolas Dumazet</title>
 
 <link rel="shortcut icon" href="/favicon.ico" />
