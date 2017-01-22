@@ -12,6 +12,11 @@ logger = logging.getLogger("blogofile.config")
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
 site.url         = "https://nicdumz.fr"
 
+# This will end up as "bf_base_template" variable.  Stock templates (e.g.
+# chronological and permapage blog entrypoints) refer to that variable (and
+# inherit from the template). This is how all blog pages get styled.
+site.base_template = "blog.mako"
+
 #### Blog Settings ####
 blog = plugins.blog
 
@@ -48,7 +53,7 @@ blog.post.date_format = '%d/%m/%Y %H:%M'
 # Intermediate Settings
 ######################################################################
 #### Disqus.com comment integration ####
-blog.disqus.enabled = True
+blog.disqus.enabled = False
 blog.disqus.name    = "nicdumz"
 
 ### Syntax highlighter ###

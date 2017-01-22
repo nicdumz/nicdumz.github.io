@@ -22,11 +22,7 @@
 % for category in post.categories:
       <category><![CDATA[${category}]]></category>
 % endfor
-% if post.guid:
-      <guid>${post.guid}</guid>
-% else:
       <guid isPermaLink="true">${post.permalink}</guid>
-% endif
       <description>${post.title}</description>
       <content:encoded><![CDATA[${post.content}]]></content:encoded>
     </item>
