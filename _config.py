@@ -110,4 +110,5 @@ site.file_ignore_patterns += [
   ".*/README.txt",
   ".*/Makefile",
   "^svgs/",
+  "virtualenv.*/",
 ]
