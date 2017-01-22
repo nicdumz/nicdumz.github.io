@@ -1,26 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+<%include file="bulma_header.mako" args="title='Nicolas Dumazet'"/>
+  <body>
+    <script type="text/javascript" async src="/js/analytics.js"></script>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<title>Nicolas Dumazet</title>
-
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/css/splash.css" type="text/css" />
-
-</head>
-
-<body>
-  <script type="text/javascript" async src="/js/analytics.js"></script>
-
-  <div id="top">
-    <img id="main-title" alt="Nicolas Dumazet" src="/images/generic/maintitle.png"/>
-  </div>
-  <img id="aka-nicdumz" alt="a.k.a NicDumZ" src="/images/generic/aka.png"/>
-  <a id="init" href="inside.html" title="Enter">
-    <img alt="Enter" src="/images/generic/init.png" width="227" height="42" />
-  </a>
-</body>
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container content">
+          <div class="columns">
+            <div class=column>
+              <h1 class="title is-1 is-bold">Nicolas Dumazet</h1>
+              <h2 class="subtitle code-font">a.k.a. NicDumZ</h2>
+            </div>
+          </div>
+          <div class="columns">
+            <!-- spacer -->
+            <div class="column is-two-thirds"></div>
+            <div class="column">
+              <a class="button is-outlined is-info is-large code-font" href="inside.html" title="Enter">self.__init__()</a>
+            </div>
+          </div>
+          <!-- container -->
+        </div>
+        <!-- hero-body -->
+      </div>
+    </section>
+  </body>
 </html>
