@@ -1,125 +1,14 @@
-@font-face {
-    font-family: "Purisa";
-    src: url("../fonts/Purisa.eot");
-    src: local("Purisa"), url("../fonts/Purisa.ttf") format("truetype");
+/* Copying Bulma's .code or .pre styling in a custom class */
+.code-font {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: "Inconsolata", "Consolas", "Monaco", monospace;
 }
 
-* {
-    border: 0;
-}
-body {
-    background-color: black;
-    color: white;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-:focus {
-    outline: 0px;
-}
-
-a:link {
-    color: #2277FF;
-}
-
-div#header {
-    position: absolute;
-    top:0;
-    left:0;
-    height: 25%;
-    width: 100%;
-
-    min-height:110px;
-
-    border-bottom: 2px solid #888888;
-    margin:0 auto;
-    padding:0;
-}
-div.dark-header {
-    background-color: white;
-}
-div.light-header {
-    background-color: black;
-}
-img#title {
-    position: absolute;
-    margin-left: 70px;
-    bottom: 0%;
-}
-img.menu-item {
-    position: absolute;
-    bottom: 0px;
-    margin-left: 1px;
-}
-/* each menu item is 20px wide, + 1px margin
-size = 20 + 1
- total width - (right hand width + 2*padding + border size)
-base = 1100 - (270 + 10*2 + 1) */
-img.menu-one {
-    margin-left: 788px;
-}
-img.menu-two {
-    margin-left: 809px;
-}
-img.menu-three {
-    margin-left: 830px;
-}
-
-div#all_but_header {
-    position:absolute;
-    top:25%;
-    width:100%;
-
-    height: auto !important;
-    height:75%;
-    min-height:75%;
-}
-div.dark-all-but-header {
-    background-color: black;
-    color: white;
-}
-div.light-all-but-header {
-    background-color: white;
-    color: black;
-}
-div#prose_block_nonblog {
-    max-width: 1100px;
-    margin: auto;
-    text-align:right;
-    color: white;
-    padding-top:4%;
-    padding-bottom: 70px;
-    padding-left: 8%;
-    padding-right: 8%;
-    font-family: Purisa, Arial, Helvetica, sans-serif;
-}
-div#footer {
-    height: 45px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-}
-div#footer-about {
-    position: relative;
-    display: block;
-    width: 35px;
-    height: 35px;
-    margin:5px auto;
-}
-img.rss-icon {
-    vertical-align: middle;
-    width: 12px;
-    height: 12px;
-}
-
-div#header-all {
-    width: 1100px;
-    margin: 0 auto;
-}
-div#contact {
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 10%;
+/* Augment bulma icon sizes with a is-tiny class */
+.icon.is-tiny {
+  font-size: 7px;
+  height: .5rem;
+  width: .5rem;
+  line-height: .5rem;
 }
