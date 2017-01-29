@@ -1,7 +1,7 @@
 <%inherit file="bulma.mako"/>
 
 ## Rest is what goes in parent's <body> section (via self.body())
-<section class="hero is-primary is-fullheight">
+<section class="hero is-info is-fullheight">
   <div class="hero-body">
     <div class="container content">
       <div class="columns">
@@ -14,7 +14,7 @@
         <!-- spacer -->
         <div class="column is-two-thirds"></div>
         <div class="column">
-          <a class="button is-outlined is-info is-large code-font" href="inside.html" title="Enter">self.__init__()</a>
+          <a class="button is-outlined is-primary is-large code-font" href="inside.html" title="Enter">self.__init__()</a>
         </div>
       </div>
       <!-- container -->

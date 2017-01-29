@@ -1,12 +1,5 @@
 <%inherit file="bulma_and_top_nav.mako"/>
 
-## Extend parent head.
-<%block name="head">
-${parent.head()}
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
- <link rel="stylesheet" href="/js/bulma.js" type="text/css" />
-</%block>
-
 ## Setup title suffix
 <%block name="title_extra"> - About</%block>
 

@@ -1,0 +1,68 @@
+// First 8 ones are dark blue gradients, darker first.
+$base-16-flat-00: #2C3E50
+$base-16-flat-01: #34495E
+$base-16-flat-02: #7F8C8D
+$base-16-flat-03: #95A5A6
+$base-16-flat-04: #BDC3C7
+$base-16-flat-05: #e0e0e0
+$base-16-flat-06: #f5f5f5
+$base-16-flat-07: #ECF0F1
+
+// red
+$base-16-flat-08: #E74C3C
+// orange
+$base-16-flat-09: #E67E22
+// yellow
+$base-16-flat-0A: #F1C40F
+// green
+$base-16-flat-0B: #2ECC71
+// turquoise
+$base-16-flat-0C: #1ABC9C
+// blue
+$base-16-flat-0D: #3498DB
+// purple
+$base-16-flat-0E: #9B59B6
+// brown
+$base-16-flat-0F: #be643c
+
+// also happens to be $primary
+$turquoise: $base-16-flat-0C
+// also $info
+$blue: $base-16-flat-01
+// also $success
+$green: $base-16-flat-0B
+// orange, actually. $warning
+$yellow: $base-16-flat-09
+// $danger
+$red: $base-16-flat-08
+$purple: $base-16-flat-0E
+
+// also $dark
+$grey-darker: $base-16-flat-00
+// Also $text
+$grey-dark: $base-16-flat-02
+$grey: $base-16-flat-03
+$grey-light: $base-16-flat-04
+$grey-lighter: $base-16-flat-06
+
+// If I was lazy:
+// @import "../_bulma_src/bulma"
+@import "../_bulma_src/sass/utilities/_all.sass"
+@import "../_bulma_src/sass/base/_all.sass"
+@import "../_bulma_src/sass/components/menu.sass"
+@import "../_bulma_src/sass/components/nav.sass"
+@import "../_bulma_src/sass/components/tabs.sass"
+@import "../_bulma_src/sass/elements/_all.sass"
+@import "../_bulma_src/sass/grid/columns.sass"
+@import "../_bulma_src/sass/layout/hero.sass"
+@import "../_bulma_src/sass/layout/section.sass"
+
+// Our own .code-font class using the same family as bulma
+.code-font
+  -moz-osx-font-smoothing: auto
+  -webkit-font-smoothing: auto
+  font-family: $family-code
+
+// Augment bulma icon sizes with a is-tiny class
+.icon.is-tiny
+  +fa(7px, .5rem)

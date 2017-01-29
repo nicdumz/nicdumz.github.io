@@ -1,4 +1,7 @@
 ~
 \.swp
 ^_site/
-virtualenv.*/
+_.*env.*/
+node_modules/
+.sass-cache/
+^css/.*\.css

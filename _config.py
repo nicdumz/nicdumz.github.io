@@ -114,6 +114,9 @@ site.file_ignore_patterns += [
   ".*/LICENSE.txt",
   ".*/README.txt",
   ".*/Makefile",
-  "^svgs/",
-  "virtualenv.*/",
+  # matches (relative) directories one by one.
+  # As of writing, 'svgs' subdirectory is './svgs' as of matching.
+  "^(./|)svgs",
+  "^(./|).sass-cache",
+  "^(./|)node_modules",
 ]

@@ -1,12 +1,5 @@
 <%inherit file="bulma_and_top_nav.mako"/>
 
-## Extend parent head.
-<%block name="head">
-${parent.head()}
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
- <link rel="stylesheet" href="/js/bulma.js" type="text/css" />
-</%block>
-
 ## Setup title suffix
 <%block name="title_extra"> - Contact me</%block>
 
@@ -29,7 +22,7 @@ ${parent.head()}
       </div>
     </div>
     <div class="columns is-vcentered is-mobile">
-      <div class="column has-text-centered notification is-light is-offset-one-quarter-desktop is-half-desktop is-one-third-tablet is-offset-one-third-tablet">
+      <div class="column has-text-centered notification is-primary is-offset-one-quarter-desktop is-half-desktop is-one-third-tablet is-offset-one-third-tablet">
         Please, have some more of my sarcasm.
       </div>
     </div>
