@@ -1,7 +1,8 @@
 ~
+__pycache__
 \.swp
 ^_site/
 _.*env.*/
-node_modules/
 .sass-cache/
 ^css/.*\.css
+.*\.egg-info/
