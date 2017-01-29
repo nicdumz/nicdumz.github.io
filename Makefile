@@ -1,3 +1,3 @@
 all:
-	sass --sourcemap=none _templates/bulma.sass css/bulma.css
+	sass --sourcemap=none -t compressed _templates/bulma.sass css/bulma.css
 	blogofile build
