@@ -113,6 +113,7 @@ site.file_ignore_patterns += [
   ".*/FONTS.txt",
   ".*/LICENSE.txt",
   ".*/README.txt",
+  ".*/README.md",
   ".*/Makefile",
   # matches (relative) directories one by one.
   # As of writing, 'svgs' subdirectory is './svgs' as of matching.
