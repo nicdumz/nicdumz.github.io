@@ -119,4 +119,5 @@ site.file_ignore_patterns += [
   "^(./|)svgs",
   "^(./|).sass-cache",
   "^(./|)node_modules",
+  "^(./|).hg",
 ]
