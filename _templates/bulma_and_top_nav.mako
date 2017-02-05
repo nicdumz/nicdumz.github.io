@@ -10,13 +10,6 @@
 %>
 <%inherit file="bulma.mako"/>
 
-## Just extend parent head to add JS.
-<%block name="head">
-${parent.head()}
- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="/js/bulma.js" async></script>
-</%block>
-
 ## And include nav things
 <div class="container">
   <nav class="nav">
@@ -43,3 +36,26 @@ ${parent.head()}
   </nav>
 </div>
 ${next.body()}
+
+## Read https://www.html5rocks.com/en/tutorials/speed/script-loading/
+## We sort of need this to load to have a perfect page, but second script is
+## dependent on first, and there's no great way to make things better than this.
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+  var $menu = $('#nav-menu');
+
+  // Support for Menu toggling.
+  $('#nav-toggle').click(function() {
+      $(this).toggleClass('is-active');
+      $menu.toggleClass('is-active');
+  });
+
+  // Add is-active to the correct nav links.
+  $("ul.menu-list li a, a.nav-item").each(function(index, elt) {
+    if (elt.href == document.location) {
+      $(elt).addClass('is-active');
+    }
+  });
+});
+</script>

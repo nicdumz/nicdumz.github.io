@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="/css/bulma.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
+    ## Read https://www.html5rocks.com/en/tutorials/speed/script-loading/
+    ## None of this is readed to render things, so do this stuff later.
+    ## The ga trick instructs analytics to do stuff after loading the script.
     <script type="text/javascript">
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
       ga('create','UA-35766312-1','auto');ga('send','pageview')
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </%block>
 
   </head>
