@@ -7,3 +7,4 @@ all:
 	# Cheap comment removal (="minification") saves ~30% size
 	sed -e "s#/\*.*##" < $(STYLE) > $(TEMPFILE)
 	mv $(TEMPFILE) $(STYLE)
+	chmod go+r $(STYLE)
