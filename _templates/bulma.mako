@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="/css/bulma.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <script type="text/javascript" src="/js/analytics.js"></script>
+    <script type="text/javascript">
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-35766312-1','auto');ga('send','pageview')
+    </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </%block>
 

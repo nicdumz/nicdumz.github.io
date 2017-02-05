@@ -14,7 +14,7 @@
 <%block name="head">
 ${parent.head()}
  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="/js/bulma.js"></script>
+ <script src="/js/bulma.js" async></script>
 </%block>
 
 ## And include nav things
