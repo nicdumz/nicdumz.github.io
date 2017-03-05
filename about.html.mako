@@ -19,7 +19,7 @@
       <div class="column content">
           <ul>
               <li>
-                  This website is hosted on <a href="https://www.webfaction.com">Webfaction</a>. I have nothing but praise for those very responsive folks.</li>
+                  This website is hosted on <a href="https://www.digitalocean.com">Digital Ocean</a>.</li>
               <li>SSL
                   <span class="icon is-tiny"><i class="fa fa-quote-left" aria-hidden="true"></i></span>added and removed here<span class="icon is-tiny"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
 for free, thanks to <a href="https://letsencrypt.org/">Let's Encrypt</a>.</li>
