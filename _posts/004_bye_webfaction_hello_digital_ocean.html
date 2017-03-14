@@ -35,14 +35,14 @@ certificates. You're not root, they do not offer direct access
 to nginx configuration files. Which means that the only way to deploy a
 certificate is to bother a human via a ticket. And since Let's Encrypt
 certificates expire every 90 days, it means bothering a human every ~2 months.
-It's fine, support is responsive enough, but for a coder, it does give you a
-bad conscience.</p>
+It's fine, support is responsive enough, and I had a script automating renewal
+and ticket email. But for a coder, it does give you a bad conscience.</p>
 
 <p>After a while (I suppose because support started receiving way too many
 tickets), they implemented a way via their webadmin dashboard, to upload your
-own certificates. So instead of bothering a human every 2 months, <em>I</em>
-had to upload via a web form new certificates every 2 months. Not really an
-improvement.</p>
+own certificates. So instead of my script bothering a human every 2 months,
+<em>I</em> had to upload, by hang, via a web form, new certificates every 2
+months. Not really an improvement.</p>
 
 <p>Webfaction always claimed that they had support coming for full Let's
 Encrypt automation, but a year after the CA launch, nothing had landed.</p>
@@ -82,7 +82,7 @@ responses, which, de facto, prevent exploiting BREACH class of attacks.</p>
 <p>Unfortunately, Webfaction had a very different response to BREACH, possibly
 because they are not security experts. Or more likely because <em>customers
 that were at-least-as-ignorant-of-security asked for that specific
-change</em>: <b>they disabled gzip compression for all their SSL
+change:</em> <b>they disabled gzip compression for all their SSL
 websites.</b></p>
 
 <p>That's quite a pity. Sure, it's a safe, large hammer to use which
