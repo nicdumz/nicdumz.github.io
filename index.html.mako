@@ -7,7 +7,7 @@
       <div class="columns">
         <div class=column>
           <h1 class="title is-1 is-bold">Nicolas Dumazet</h1>
-          <h2 class="subtitle code-font">a.k.a. NicDumZ</h2>
+          <h2 class="subtitle code-font">a.k.a. nicdumz</h2>
         </div>
       </div>
       <div class="columns">

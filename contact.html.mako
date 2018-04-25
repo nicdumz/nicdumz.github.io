@@ -33,10 +33,10 @@
 <a class="button is-medium" href="https://github.com/nicdumz" title="github profile">
 <span class=icon><i class="fa fa-github" aria-hidden="true"></i></span><span>GitHub</span>
 </a>
-<a class="button is-medium" href="https://linkedin.com/in/nicdumz" title="linkedin profile">
+<a class="button is-medium" href="https://linkedin.com/in/ndumazet" title="linkedin profile">
 <span class=icon><i class="fa fa-linkedin" aria-hidden="true"></i></span><span>linkedin</span>
 </a>
-<a class="button is-medium" href="https://facebook.com/nicdumz" title="facebook profile">
+<a class="button is-medium" href="https://facebook.com/ndumazet" title="facebook profile">
 <span class=icon><i class="fa fa-facebook" aria-hidden="true"></i></span><span>Facebook</span>
 </a>
 <a class="button is-medium" href="mailto:nicdumz@gmail.com" title="email">
