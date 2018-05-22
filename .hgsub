@@ -1,1 +1,2 @@
 _bulma_src = [git]https://github.com/jgthms/bulma.git
+_bulma_timeline_src = [git]https://github.com/Wikiki/bulma-timeline.git

@@ -25,22 +25,22 @@ $base-16-flat-0E: #9B59B6
 // brown
 $base-16-flat-0F: #be643c
 
-// also happens to be $primary
 $turquoise: $base-16-flat-0C
-// also $info
+$primary: $turquoise
 $blue: $base-16-flat-01
-// also $success
+$info: $blue
 $green: $base-16-flat-0B
-// orange, actually. $warning
+$success: $green
 $yellow: $base-16-flat-09
-// $danger
+$warning: $yellow
 $red: $base-16-flat-08
+$danger: $red
 $purple: $base-16-flat-0E
 
-// also $dark
 $grey-darker: $base-16-flat-00
-// Also $text
+$dark: $grey-darker
 $grey-dark: $base-16-flat-02
+$text: $grey-dark
 $grey: $base-16-flat-03
 $grey-light: $base-16-flat-04
 $grey-lighter: $base-16-flat-06
@@ -48,20 +48,27 @@ $grey-lighter: $base-16-flat-06
 // If I was lazy:
 // @import "../_bulma_src/bulma"
 @import "../_bulma_src/sass/utilities/_all.sass"
+$link: $turquoise
+$link-invert: $turquoise-invert
+$title-weight: 400
+$subtitle-weight: 400
+$content-heading-weight: 400
+// $weight-semibold: 500
+// $weight-bold: 600
 @import "../_bulma_src/sass/base/_all.sass"
 @import "../_bulma_src/sass/components/menu.sass"
-@import "../_bulma_src/sass/components/nav.sass"
+@import "../_bulma_src/sass/components/navbar.sass"
 @import "../_bulma_src/sass/components/tabs.sass"
 @import "../_bulma_src/sass/elements/_all.sass"
 @import "../_bulma_src/sass/grid/columns.sass"
 @import "../_bulma_src/sass/layout/hero.sass"
 @import "../_bulma_src/sass/layout/section.sass"
+@import "../_bulma_timeline_src/dist/bulma-timeline.sass"
 
-// Our own .code-font class using the same family as bulma
 .code-font
   -moz-osx-font-smoothing: auto
   -webkit-font-smoothing: auto
-  font-family: $family-code
+  font-family: "Inconsolata", "Consolas", "Monaco", monospace
 
 // Augment bulma icon sizes with a is-tiny class
 .icon.is-tiny

@@ -1,8 +1,8 @@
-## Define all the tabs we'll want to see in the nav
+## Define all the tabs we'll want to see in the navbar
 <%!
   from collections import namedtuple
   Nav = namedtuple('Nav', ['url', 'text'])
-  navitems = [
+  navbaritems = [
     Nav('/', 'Home'),
     Nav('/blog/', 'Blog'),
     Nav('/#about', 'About'),
@@ -10,30 +10,30 @@
 %>
 <%inherit file="bulma.mako"/>
 
-## And include nav things
+## And include navbar things
 <div class="container">
-  <nav class="nav">
-    <div class="nav-left">
-      <a class="nav-item is-brand" href="/">
+  <navbar class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
         <p class="title">Nicolas Dumazet</p>
       </a>
+      <!-- This "navbar-burger" hamburger menu is only visible on mobile -->
+      <!-- JavaScript toggles the "is-active" class on "navbar-menu" -->
+      <a role="button" id="navbar-burger" class="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-    <!-- JavaScript toggles the "is-active" class on "nav-menu" -->
-    <span id="nav-toggle" class="nav-toggle">
-% for nav in navitems:
-      <span></span>
-% endfor
-    </span>
 
-    <!-- This "nav-menu" is hidden on mobile -->
-    <!-- Add the modifier "is-active" to display it on mobile -->
-    <div id="nav-menu" class="nav-right nav-menu">
-% for nav in navitems:
-      <a class="nav-item" href="${nav.url}">${nav.text}</a>
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-end">
+% for navbar in navbaritems:
+        <a class="navbar-item" href="${navbar.url}">${navbar.text}</a>
 % endfor
+      </div>
     </div>
-  </nav>
+  </navbar>
 </div>
 ${next.body()}
 
@@ -43,16 +43,16 @@ ${next.body()}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
-  var $menu = $('#nav-menu');
+  var $menu = $('#navbar-menu');
 
   // Support for Menu toggling.
-  $('#nav-toggle').click(function() {
+  $('#navbar-burger').click(function() {
       $(this).toggleClass('is-active');
       $menu.toggleClass('is-active');
   });
 
-  // Add is-active to the correct nav links.
-  $("ul.menu-list li a, a.nav-item").each(function(index, elt) {
+  // Add is-active to the correct navbar links.
+  $("a.navbar-item").each(function(index, elt) {
     if (elt.href == document.location) {
       $(elt).addClass('is-active');
     }

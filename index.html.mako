@@ -6,7 +6,7 @@
     <div class="container content">
       <div class="columns">
         <div class=column>
-          <h1 class="title is-1 is-bold">Nicolas Dumazet</h1>
+          <p class="title is-1 is-bold">Nicolas Dumazet</p>
           <h2 class="subtitle code-font">a.k.a. nicdumz</h2>
         </div>
       </div>
