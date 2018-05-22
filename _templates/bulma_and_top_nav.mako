@@ -3,10 +3,10 @@
   from collections import namedtuple
   Nav = namedtuple('Nav', ['url', 'text'])
   navitems = [
-    Nav('/inside.html', 'Home'),
+    Nav('/', 'Home'),
     Nav('/blog/', 'Blog'),
-    Nav('/about.html', 'About'),
-    Nav('/contact.html', 'Contact')]
+    Nav('/#about', 'About'),
+    Nav('/#contact', 'Contact')]
 %>
 <%inherit file="bulma.mako"/>
 
