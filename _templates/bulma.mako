@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/css/bulma.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     ## Read https://www.html5rocks.com/en/tutorials/speed/script-loading/
     ## None of this is readed to render things, so do this stuff later.
