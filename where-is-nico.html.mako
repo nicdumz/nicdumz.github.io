@@ -53,7 +53,7 @@
       </div>
       <div class="timeline-content">
         <p class="heading has-text-warning">22 - 23 Juin</p>
-        <p>Maybe: "Friendly gathering", aka mini-burn &agrave; c&ocirc;t&eacute; de Zurich.</p>
+        <p><b>Maybe:</b> "Friendly gathering", aka mini-burn &agrave; c&ocirc;t&eacute; de Zurich.</p>
       </div>
     </div>
     <div class="timeline-item">
@@ -62,7 +62,7 @@
       </div>
       <div class="timeline-content">
         <p class="heading has-text-warning">21 - 27 Juillet</p>
-		<p>Maybe: Pre-mariage? Maison de vacances d'un pote, dans les vignes autour d'Orange</p>
+		<p><b>Maybe:</b> Pre-mariage? Maison de vacances des parents d'un pote (<i>paye ton Suisse</i>), dans les vignes autour d'Orange</p>
       </div>
     </div>
     <div class="timeline-item">
@@ -80,7 +80,7 @@
       </div>
       <div class="timeline-content">
         <p class="heading has-text-warning">Mi ao&ucirc;t - D&eacute;but septembre</p>
-        <p>Maybe: Burning man derni&egrave;re semaine d'ao&ucirc;t. Si j'y vais je suis en Californie (SF) avant</p>
+        <p><b>Maybe:</b> Burning man derni&egrave;re semaine d'ao&ucirc;t. Si j'y vais je suis en Californie (SF) avant</p>
       </div>
     </div>
     <div class="timeline-header">
