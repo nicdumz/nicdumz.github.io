@@ -71,7 +71,7 @@
       </div>
       <div class="timeline-content">
         <p class="heading has-text-success">27 - 29 Juillet</p>
-        <p>Mariage autour de Paris</p>
+        <p>Mariage Russe <i>over-the-top</i> autour de Paris</p>
       </div>
     </div>
     <div class="timeline-item">
