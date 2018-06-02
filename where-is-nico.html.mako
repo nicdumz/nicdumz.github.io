@@ -6,7 +6,7 @@
   <div class="hero-body">
     <div class="container is-vcentered">
       <p class="title">
-      <span class="icon is-large has-text-warning"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+      <span class="icon is-large has-text-warning"><i class="fas fa-map-marker" aria-hidden="true"></i></span>
       Where is Nico?</p>
     </div>
   </div>
@@ -22,7 +22,7 @@
     </header>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-success">
-        <i class="fa fa-glass-martini"></i>
+        <i class="fas fa-glass-martini"></i>
       </div>
       <div class="timeline-content">
         <p class="heading">6 Mai</p>
@@ -31,7 +31,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-danger">
-        <i class="fa fa-plane"></i>
+        <i class="fas fa-plane"></i>
       </div>
       <div class="timeline-content">
         <p class="heading has-text-success">25 Mai - 1er Juin</p>
@@ -40,7 +40,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-danger">
-        <i class="fa fa-plane"></i>
+        <i class="fas fa-plane"></i>
       </div>
       <div class="timeline-content">
         <p class="heading has-text-success">8 - 21 Juin</p>
@@ -49,7 +49,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-warning">
-        <i class="fa fa-fire"></i>
+        <i class="fas fa-fire"></i>
       </div>
       <div class="timeline-content">
         <p class="heading has-text-warning">22 - 23 Juin</p>
@@ -58,7 +58,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-info">
-        <i class="fa fa-wine-glass"></i>
+        <i class="fas fa-wine-glass"></i>
       </div>
       <div class="timeline-content">
         <p class="heading has-text-warning">21 - 27 Juillet</p>
@@ -67,7 +67,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-info">
-        <i class="fa fa-frog"></i>
+        <i class="fas fa-frog"></i>
       </div>
       <div class="timeline-content">
         <p class="heading has-text-success">27 - 29 Juillet</p>
@@ -76,7 +76,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-marker is-icon is-warning">
-        <i class="fa fa-fire"></i>
+        <i class="fas fa-fire"></i>
       </div>
       <div class="timeline-content">
         <p class="heading has-text-warning">Mi ao&ucirc;t - D&eacute;but septembre</p>

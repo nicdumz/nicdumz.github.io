@@ -33,7 +33,7 @@
   <ul class="menu-list">
     <li>
       <a href="/blog/feed/index.xml" title="RSS feed">
-        <span class="icon is-small"><i class="fa fa-rss" aria-hidden="true"></i></span>
+        <span class="icon is-small"><i class="fas fa-rss" aria-hidden="true"></i></span>
         RSS feed
       </a>
     </li>
