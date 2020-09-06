@@ -6,7 +6,7 @@ I'm using [Blogofile](https://github.com/EnigmaCurry/blogofile) as a framework.
     sudo su -c "gem install sass"
     virtualenv -p /usr/bin/python3 _virtualenv
     source _virtualenv/bin/activate.fish
-    pip install --process-dependency-links -e _python
+    pip install -e _python
 
 
 # Dev server
