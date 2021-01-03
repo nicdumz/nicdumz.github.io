@@ -39,9 +39,9 @@
         <!-- spacer, only for long wide screens -->
         <div class="column is-1 is-hidden-mobile"></div>
         <div class="column content">
-            <p>I used to live in busy Tokyo. Home is now Zurich, in the middle of the Swiss mountains.</p>
+            <p>I used to live in busy Tokyo. Home is now Zürich, in the middle of the Swiss mountains.</p>
 
-            <p>I work for Google. I spent quite some time with the team in charge of Search Infrastructure behind Image Search. That meant everything which needed to happen in order to serve content on <span class="code-font">images.google.com</span>, from crawling to indexing. I've now moved to another indexing team, still within Search. Still working in Infrastructure.</p>
+            <p>I work for Google. I spent quite some time with the team in charge of Search Infrastructure behind Image Search. That meant everything which needed to happen in order to serve content on <span class="code-font">images.google.com</span>, from crawling to indexing. My current team specializes in <a href="https://sre.google/books/">Reliability</a>. We run safely and reliably Security Infrastructure backends for Google Cloud and Google-internal applications.</p>
 
             <p>I invested quite some time in my early 20s caring for, and contributing to, Open Source software. Since the decline of <a class="is-link" href="http://www.ohloh.net/accounts/nicdumz">Ohloh</a>, there's no great way to showcase such involvement. My <span class="icon is-small"><i class="fas fa-briefcase" aria-hidden="true"></i></span> <a href="/resume-dumazet.pdf" title="Resume">resume</a> will tell you the gist of it, along with more of my professional background. </p>
 
@@ -85,7 +85,7 @@
   for free, thanks to <a href="https://letsencrypt.org/">Let's Encrypt</a>.</li>
             <li>I believe in plain, static html pages when relevant, which is why this website is purely static. I don't necessarily need to handcraft every single page though, which is why I used a static site generator, <a href="/blog/2010/12/why-blogofile/">Blogofile</a>. Includes templating functionalities to avoid repeating yourself.</li>
             <li><a href="http://bulma.io">Bulma</a> CSS framework was of great help for layout and styling, since I have very poor UI skills.</li>
-            <li>Source is versioned using Mercurial and available on <a href="https://bitbucket.org/nicdumz/website" title="bitbucket repository">Bitbucket</a>.</li>
+            <li>Source available on <a href="https://github.com/nicdumz/website" title="github repository">Github</a>.</li>
             <li>Content built using Free Software (Vim, Gimp, Inkscape, ...).</li>
             <li>Most of the content is available under Creative Commons-By 3.0, please check LICENSE.txt file in the source for details.</li>
             </ul>
@@ -146,10 +146,6 @@
         </div><div class="column columns is-mobile is-gapless">
 
           <div class="column">
-            <a class="button is-medium" href="https://facebook.com/ndumazet" title="facebook profile">
-            <span class=icon><i class="fab fa-facebook" aria-hidden="true"></i></span><span>Facebook</span>
-            </a>
-          </div><div class="column">
             <a class="button is-medium" href="mailto:nicdumz@gmail.com" title="email">
             <span class=icon><i class="fas fa-envelope" aria-hidden="true"></i></span><span>email</span>
             </a>
