@@ -11,6 +11,6 @@ I'm using [Blogofile](https://github.com/EnigmaCurry/blogofile) as a framework.
 
 # Dev server
 
-   make
-   cd \_site
-   python3 -m http.server 8888
+    make
+    cd \_site
+    python3 -m http.server 8888
