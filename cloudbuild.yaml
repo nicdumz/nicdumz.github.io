@@ -4,7 +4,7 @@ steps:
   entrypoint: 'bash'
   args:
   - '-c'
-  - 'gcloud secrets versions access latest --secret=id_github > /root/.ssh/id_github'
+  - 'gcloud secrets versions access latest --secret=deploy_key_github_website > /root/.ssh/id_github'
   volumes:
   - name: 'ssh'
     path: /root/.ssh

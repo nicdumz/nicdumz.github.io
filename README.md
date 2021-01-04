@@ -19,3 +19,11 @@ I'm using [Blogofile](https://github.com/EnigmaCurry/blogofile) as a framework.
     make
     cd \_site
     python3 -m http.server 8888
+
+# Production
+
+- Pushing to github triggers a GCP docker build. The default github integration
+  didn't work as submodules aren't pulled. Instead I'm using [this
+  recipe](https://cloud.google.com/cloud-build/docs/access-private-github-repos)
+  to customize behavior on pull (and it serves as a toy example of how Secret
+  Manager works).
