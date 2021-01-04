@@ -1,15 +1,20 @@
 Source code for site at https://nicdumz.fr
 
 I'm using [Blogofile](https://github.com/EnigmaCurry/blogofile) as a framework.
-# Dev environment setup
 
-    sudo su -c "gem install sass"
-    virtualenv -p /usr/bin/python3 _virtualenv
+# Docker
+
+    docker build .
+
+# Manual install
+
     source _virtualenv/bin/activate.fish
+    pip install nodeenv
     pip install -e _python
+    nodeenv -p
+    npm install sass
 
-
-# Dev server
+# Manual dev server
 
     make
     cd \_site
