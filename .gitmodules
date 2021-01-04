@@ -1,7 +1,4 @@
 [submodule "_bulma_src"]
 	path = _bulma_src
 	url = https://github.com/jgthms/bulma.git
-[submodule "_bulma_timeline_src"]
-	path = _bulma_timeline_src
-	url = https://github.com/Wikiki/bulma-timeline.git
 
