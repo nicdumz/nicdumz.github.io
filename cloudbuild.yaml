@@ -1,45 +1,46 @@
- steps:
- # Access the id_github file from Secret Manager
- - name: 'gcr.io/cloud-builders/gcloud'
+steps:
+# Access the id_github file from Secret Manager
+- name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
-  args: [ '-c', 'gcloud secrets versions access latest --secret=id_github > /root/.ssh/id_github' ]
+  args:
+  - '-c'
+  - 'gcloud secrets versions access latest --secret=id_github > /root/.ssh/id_github'
   volumes:
   - name: 'ssh'
     path: /root/.ssh
 
- # Set up ssh to use that key (and ignore host fingerprints)
- - name: 'gcr.io/cloud-builders/git'
-   entrypoint: 'bash'
-   args:
-   - '-c'
-   - |
-     chmod 600 /root/.ssh/id_github
-     cat <<EOF >/root/.ssh/config
-     Hostname github.com
-     IdentityFile /root/.ssh/id_github
-     StrictHostKeyChecking no
-     EOF
-   volumes:
-   - name: 'ssh'
-     path: /root/.ssh
+# Set up ssh to use that key (and ignore host fingerprints)
+- name: 'gcr.io/cloud-builders/git'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    chmod 600 /root/.ssh/id_github
+    cat <<EOF >/root/.ssh/config
+    Hostname github.com
+    IdentityFile /root/.ssh/id_github
+    StrictHostKeyChecking no
+    EOF
+  volumes:
+  - name: 'ssh'
+    path: /root/.ssh
 
- # Clone the repository (and submodules).
- - name: 'gcr.io/cloud-builders/git'
-   args:
-   - clone
-   - --recurse-submodules
-   - git@github.com:nicdumz/website
-   volumes:
-   - name: 'ssh'
-     path: /root/.ssh
+# Clone the repository (and submodules).
+- name: 'gcr.io/cloud-builders/git'
+  args:
+  - clone
+  - --recurse-submodules
+  - git@github.com:nicdumz/website
+  volumes:
+  - name: 'ssh'
+    path: /root/.ssh
 
- # Build the container image
- - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA', 'website']
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA', 'website']
 
- # Push the container image to Container Registry
- - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
 
- images:
- - 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA'
+images: ['gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
