@@ -1,0 +1,20 @@
+<aside class="menu">
+  <p class="menu-label">
+  Latest blog posts
+  </p>
+  <ul class="menu-list">
+{% for post in site.posts limit:5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+  </ul>
+
+  <p class="menu-label">
+  Tags
+  </p>
+  <ul class="menu-list">
+{% for tag in site.tags %}
+  <li><a href="/blog/tag/{{ tag[0] }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
+{% endfor %}
+  </ul>
+
+</aside>

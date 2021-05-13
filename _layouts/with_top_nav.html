@@ -1,16 +1,7 @@
-## Define all the tabs we'll want to see in the navbar
-<%!
-  from collections import namedtuple
-  Nav = namedtuple('Nav', ['url', 'text'])
-  navbaritems = [
-    Nav('/', 'Home'),
-    Nav('/blog/', 'Blog'),
-    Nav('/#about', 'About'),
-    Nav('/#contact', 'Contact')]
-%>
-<%inherit file="bulma.mako"/>
+---
+layout: default
+---
 
-## And include navbar things
 <div class="container">
   <navbar class="navbar">
     <div class="navbar-brand">
@@ -28,18 +19,16 @@
 
     <div id="navbar-menu" class="navbar-menu">
       <div class="navbar-end">
-% for navbar in navbaritems:
-        <a class="navbar-item" href="${navbar.url}">${navbar.text}</a>
-% endfor
+        <a class="navbar-item" href="/">Home</a>
+        <a class="navbar-item" href="/blog/">Blog</a>
+        <a class="navbar-item" href="/#about">About</a>
+        <a class="navbar-item" href="/#contact">Contact</a>
       </div>
     </div>
   </navbar>
 </div>
-${next.body()}
+{{ content }}
 
-## Read https://www.html5rocks.com/en/tutorials/speed/script-loading/
-## We sort of need this to load to have a perfect page, but second script is
-## dependent on first, and there's no great way to make things better than this.
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function ($) {

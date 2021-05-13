@@ -1,0 +1,29 @@
+---
+layout: with_top_nav
+---
+
+<section class="hero is-dark is-small has-text-right">
+  <div class="hero-body">
+    <div class="container is-dark">
+      <p class="title">Ramblings</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+  <div class="columns">
+      <div class="column is-hidden-mobile is-2">
+        {% include sidebar.html %}
+      </div>
+
+      <div class="column">
+
+      {{ content }}
+
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,6 +1,7 @@
 # Jekyll config
 sass:
   style: compact # possible values: nested expanded compact compressed
+permalink: /:year/:month/:title:output_ext
 defaults:
   - scope:
       path: "assets/images"
