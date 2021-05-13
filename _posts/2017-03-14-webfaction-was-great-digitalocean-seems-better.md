@@ -3,128 +3,122 @@ tags: webhost webfaction digitalocean
 date: 14/03/2017 23:00
 title: Webfaction was great, Digital Ocean seems better
 ---
-<h1>Webfaction</h1>
+# Webfaction
 
-<p>
-A few years ago, <a href="https://webfaction.com">Webfaction</a> had been
-offering something somewhat unique on the market. Hosting by developers, for
-developers, for less than 10 USD a month.  For that price I could get SSH
-access to a shared machine, deploy almost whatever I wanted and get it served
-by nginx, fast. This was unique: at that time you either had to pay for pricier
-dedicated machines to get SSH access, or downgrade to simple already-configured
-bricks that had very little flexibility.</p>
+A few years ago, [Webfaction](https://webfaction.com) had been offering
+something somewhat unique on the market. Hosting by developers, for developers,
+for less than 10 USD a month.  For that price I could get SSH access to a shared
+machine, deploy almost whatever I wanted and get it served by nginx, fast. This
+was unique: at that time you either had to pay for pricier dedicated machines to
+get SSH access, or downgrade to simple already-configured bricks that had very
+little flexibility.
 
-<p>I particularly enjoyed the idea that I could push-over-SSH my content via my
-version control system, and get it deployed via a hook.</p>
+I particularly enjoyed the idea that I could push-over-SSH my content via my
+version control system, and get it deployed via a hook.
 
-<p>Adopting Webfaction was a pretty great experience. Ticket support a few
-years ago was responsive and helpful. A much better experience than what I had
-hoped for.</p>
+Adopting Webfaction was a pretty great experience. Ticket support a few years
+ago was responsive and helpful. A much better experience than what I had hoped
+for.
 
-<h1>First they came for Let's Encrypt</h1>
+# First they came for Let's Encrypt
 
-<p>And then Let's Encrypt happened. Free SSL certificates, I thought, great!</p>
+And then Let's Encrypt happened. Free SSL certificates, I thought, great!
 
-<p>You see, I'm not great at it yet, but I do care about security, and
-in that respect an opportunity to participate and help spread SSL further
-seemed like a great idea. I jumped in, and moved this modest website to https.</p>
+You see, I'm not great at it yet, but I do care about security, and in that
+great idea. I jumped in, and moved this modest website to https. respect an
+opportunity to participate and help spread SSL further seemed like a
 
-<p>This is where trouble started. Webfaction has no first-party support for SSL
-certificates. You're not root, they do not offer direct access
-to nginx configuration files. Which means that the only way to deploy a
-certificate is to bother a human via a ticket. And since Let's Encrypt
-certificates expire every 90 days, it means bothering a human every ~2 months.
-It's fine, support is responsive enough, and I had a script automating renewal
-and ticket email. But for a coder, it does give you a bad conscience.</p>
+This is where trouble started. Webfaction has no first-party support for SSL
+certificates. You're not root, they do not offer direct access to nginx
+configuration files. Which means that the only way to deploy a certificate is to
+bother a human via a ticket. And since Let's Encrypt certificates expire every
+responsive enough, and I had a script automating renewal and ticket email. But
+90 days, it means bothering a human every ~2 months. It's fine, support is for a
+coder, it does give you a bad conscience.
 
-<p>After a while (I suppose because support started receiving way too many
+After a while (I suppose because support started receiving way too many
 tickets), they implemented a way via their webadmin dashboard, to upload your
-own certificates. So instead of my script bothering a human every 2 months,
-<em>I</em> had to upload, by hand, via a web form, new certificates every 2
-months. Not really an improvement.</p>
+own certificates. So instead of my script bothering a human every 2 months, _I_
+had to upload, by hand, via a web form, new certificates every 2 months. Not
+really an improvement.
 
-<p>Webfaction always claimed that they had support coming for full Let's
-Encrypt automation, but a year after the CA launch, nothing had landed.</p>
+Webfaction always claimed that they had support coming for full Let's Encrypt
+automation, but a year after the CA launch, nothing had landed.
 
-<h1>Then they came for gzip</h1>
+# Then they came for gzip
 
-<p><a href="http://www.breachattack.com">BREACH</a> happened.</p>
+[BREACH](http://www.breachattack.com) happened.
 
-<p><b><em>tl;dr:</em></b> this is a compression side-channel attack. For HTTPS
-websites that (a) do use compression, (b) include query data in the response,
-<em>and</em> (c) serve some kind of secret, bad guys might be able to guess
-what the secret is, by repeatedly issuing requests, with various payloads, and
-observing how the compressed (encrypted) response changes.</p>
+**_tl;dr:_** this is a compression side-channel attack. For HTTPS websites that
+(a) do use compression, (b) include query data in the response, _and_ (c) serve
+some kind of secret, bad guys might be able to guess what the secret is, by
+repeatedly issuing requests, with various payloads, and observing how the
+compressed (encrypted) response changes.
 
-<p>It's a serious class of attack. Any website serving secrets should care and
-implement counter-measures. But if you're serious about security (and you
-should be, if you're serving secrets over the web, right?), I do hope that way
-before the publication of this class of attacks, you were already implementing
-some, if not, all, of the following countermeasures:
+It's a serious class of attack. Any website serving secrets should care and
+implement counter-measures. But if you're serious about security (and you should
+be, if you're serving secrets over the web, right?), I do hope that way before
+the publication of this class of attacks, you were already implementing some, if
+not, all, of the following countermeasures:
 
-<ul>
-    <li>Try really hard to avoid responses that do include query data, or
-        responses that depend deterministically on user input. Because any
-        website allowing such thing probably has way too many XSS
-        vulnerabilities lurking. Hello <code>?username=alert(1);</code>.</li>
-    <li>Defend against XSRF issues, using CSRF tokens. For instance, on login
-        pages, it's common for servers to return a single-use random CSRF
-        token/nonce that the client must submit along their request, to prevent
-        repeatability.</li>
-    <li>Randomize response length and content.</li>
-    <li>Rate-limiting requests.</li>
-</ul>
+  * Try really hard to avoid responses that do include query data, or responses
+        that depend deterministically on user input. Because any website
+        allowing such thing probably has way too many XSS vulnerabilities
+        lurking. Hello `?username=alert(1);`.
+  * Defend against XSRF issues, using CSRF tokens. For instance, on login pages,
+        it's common for servers to return a single-use random CSRF token/nonce
+        that the client must submit along their request, to prevent
+        repeatability.
+  * Randomize response length and content.
+  * Rate-limiting requests.
 
 All of those basic security measures prevent repeatability, and randomize
-responses, which, de facto, prevent exploiting BREACH class of attacks.</p>
+responses, which, de facto, prevent exploiting BREACH class of attacks.
 
-<p>Unfortunately, Webfaction had a very different response to BREACH, possibly
-because they are not security experts. Or more likely because <em>customers
-that were at-least-as-ignorant-of-security asked for that specific
-change:</em> <b>they disabled gzip compression for all their SSL
-websites.</b></p>
+Unfortunately, Webfaction had a very different response to BREACH, possibly
+because they are not security experts. Or more likely because _customers that
+were at-least-as-ignorant-of-security asked for that specific change:_ **they
+disabled gzip compression for all their SSL websites.**
 
-<p>That's quite a pity. Sure, it's a safe, large hammer to use which
-appears to immediately hide away all problems. But websites written with poor
-security practices are still vulnerable websites, very likely prone to XSS or
-CSRF attacks. Disabling gzip as a way to save them from BREACH is a poor
-decision, not improving web security as a whole.</p>
+That's quite a pity. Sure, it's a safe, large hammer to use which appears to
+immediately hide away all problems. But websites written with poor security
+practices are still vulnerable websites, very likely prone to XSS or CSRF
+attacks. Disabling gzip as a way to save them from BREACH is a poor decision,
+not improving web security as a whole.
 
-<p>Webfaction is working on nginx config fragment support, to allow users to
-e.g. enable compression per-website. But as of writing, there's no ETA for that
+Webfaction is working on nginx config fragment support, to allow users to e.g.
+enable compression per-website. But as of writing, there's no ETA for that
 feature, and their support denied manual overrides to configs. No way to
-re-enable gzip compression on your website.</p>
+re-enable gzip compression on your website.
 
-<h1>It was time to speak out?</h1>
+# Time to speak out?
 
-<p>Do I really care that much about running a command and submitting a form
-every 2 months to renew a certificate? Do I even need compression that bad on
-this static website? No, and no. Definitely not that critical.</p>
+Do I really care that much about running a command and submitting a form every 2
+months to renew a certificate? Do I even need compression that bad on this
+static website? No, and no. Definitely not that critical.
 
-<p>But I reached a clear, fundamental disagreement with the way this host is
+But I reached a clear, fundamental disagreement with the way this host is
 running their services. I care enough about SSL to require first-party,
 automated support for certificate changes. And the way to secure websites, is
-to, <em>duh</em> actually fix the root cause, not disable the
-<em>perceived</em> cause of a vulnerability. Sending more bytes over the wire
-by disabling compression does not protect websites from basic XSS/CSRF
-issues.</p>
+to, _duh_ actually fix the root cause, not disable the _perceived_ cause of a
+vulnerability. Sending more bytes over the wire by disabling compression does
+not protect websites from basic XSS/CSRF issues.
 
-<p>And why won't you just let me customize my nginx configuration, urgh.</p>
+And why won't you just let me customize my nginx configuration, urgh.
 
-<h1>Digital Ocean</h1>
+# Digital Ocean
 
-<p>I moved out. Looking around, <a href="https://www.digitalocean.com/">Digital
-    Ocean</a> seemed like a great option. 5 USD a month, and in a few seconds
-I could create an instance running a clean OS. SSH access, root. I get to run
-whatever I want. <em>Switch gzip on, and off, and back on, as much as I
-want.</em></p>
+I moved out. Looking around, [Digital Ocean](https://www.digitalocean.com/)
+seemed like a great option. 5 USD a month, and in a few seconds I could create
+an instance running a clean OS. SH access, root. I get to run whatever I want.
+_Switch gzip on, and off, and back on, as much as I want._
 
-<p>In a couple of hours, on a lazy Sunday, I migrated my data from Webfaction
-to Digital Ocean. Configuring nginx and auto-renewal for Let's Encrypt was
-easier than Hello World in Haskell, thanks to their community-maintained guides
-that even sysadmin dummies like me can follow.</p>
+In a couple of hours, on a lazy Sunday, I migrated my data from Webfaction to
+Digital Ocean. Configuring nginx and auto-renewal for Let's Encrypt was easier
+than Hello World in Haskell, thanks to their community-maintained guides that
+even sysadmin dummies like me can follow.
 
-<p>Looking back, it's even somewhat strange. How did I survive not having full
-access to the machine before?</p>
+Looking back, it's even somewhat strange. How did I survive not having full
+access to the machine before?
 
-<p>Hello <b>Digital Ocean</b>, and thanks: I, for one, embrace change.</p>
+Hello **Digital Ocean**, and thanks: I, for one, embrace change.
