@@ -1,6 +1,5 @@
 ---
 categories: Python
-permalink: https://nicdumz.fr/blog/2010/12/hello-world
 date: 29/12/2010 23:15
 title: "Hello world!"
 ---

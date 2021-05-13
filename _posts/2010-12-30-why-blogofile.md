@@ -1,10 +1,10 @@
 ---
 categories: Python
 tags: blogofile
-permalink: https://nicdumz.fr/blog/2010/12/why-blogofile
 date: 30/12/2010 15:15
 title: Why Blogofile?
 ---
+
 <p>
 I recently started following Planet Python, and two posts by Mike Pirnat caught
 my attention: I have to admit that if after the

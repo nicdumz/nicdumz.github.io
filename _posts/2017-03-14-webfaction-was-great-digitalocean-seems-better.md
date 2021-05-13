@@ -1,6 +1,5 @@
 ---
-tags: webhost, webfaction, digitalocean
-permalink: https://nicdumz.fr/blog/2017/03/webfaction-was-great-digitalocean-seems-better
+tags: webhost webfaction digitalocean
 date: 14/03/2017 23:00
 title: Webfaction was great, Digital Ocean seems better
 ---

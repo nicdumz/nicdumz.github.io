@@ -1,6 +1,5 @@
 ---
 tags: bulma responsive
-permalink: https://nicdumz.fr/blog/2017/02/visual-refresh
 date: 05/02/2017 15:15
 title: Visual refresh
 ---

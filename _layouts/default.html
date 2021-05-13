@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- lol IE -->
-    <title>{% if page.title == empty %}Nicolas Dumazet{% else %}Nicolas Dumazet - {{ page.title }}{% endif %}</title>
+    <title>{%- if page.title == empty -%}Nicolas Dumazet{%- else -%}Nicolas Dumazet - {{ page.title }}{%- endif -%}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="/assets/css/rouge-molokai-syntax.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    {%- if jekyll.environment == 'production' -%}
     <script type="text/javascript">
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
       ga('create','UA-35766312-1','auto');ga('send','pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+    {%- endif -%}
   </head>
   <body>
     <!-- lol IE (2) -->
