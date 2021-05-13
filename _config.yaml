@@ -1,0 +1,9 @@
+# Jekyll config
+sass:
+  style: compact # possible values: nested expanded compact compressed
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+

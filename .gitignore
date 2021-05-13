@@ -7,3 +7,5 @@ _*env*/
 .sass-cache/
 css/*.css
 *.egg-info/
+.jekyll-cache/
+Gemfile.lock

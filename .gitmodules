@@ -1,4 +1,4 @@
 [submodule "_bulma_src"]
-	path = _bulma_src
+	path = _sass/bulma
 	url = https://github.com/jgthms/bulma.git
 
