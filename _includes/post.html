@@ -4,13 +4,16 @@
     <header>
       <div id="{{ include.post.id | replace: "/" "-" }}"></div>
       <h2 class="blog_post_title"><a href="{{ include.post.url }}" rel="bookmark" title="Permanent Link to {{ include.post.title }}">{{ include.post.title }}</a></h2>
-      <p><small><span class="blog_post_date">{{ include.post.date }}</span> {% unless include.post.tags == empty %} | tagged:
+      <p><small><span class="blog_post_date">{{ include.post.date }}</span> 
+        <!--
+        {% unless include.post.tags == empty %} | tagged:
         <span class="blog_post_tags">
           {% for tag in include.post.tags %}
             <a href="/blog/tag/{{ tag }}">{{ tag }} </a>
           {% endfor %}
         </span>
         {% endunless %}
+      -->
       </small></p>
     </header>
     <div class="post_prose">
