@@ -29,22 +29,22 @@ layout: default
 </div>
 {{ content }}
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function ($) {
-  var $menu = $('#navbar-menu');
+<script type="text/javascript" defer>
+let menu = document.querySelector('#navbar-menu');
+let burger = document.querySelector("#navbar-burger");
 
-  // Support for Menu toggling.
-  $('#navbar-burger').click(function() {
-      $(this).toggleClass('is-active');
-      $menu.toggleClass('is-active');
-  });
+// Support for Menu toggling.
+burger.addEventListener('click', () => {
+  burger.classList.toggle('is-active');
+  menu.classList.toggle('is-active');
+});
 
-  // Add is-active to the correct navbar links.
-  $("a.navbar-item").each(function(index, elt) {
-    if (elt.href == document.location) {
-      $(elt).addClass('is-active');
-    }
-  });
+// Add highlighting to the correct navbar links.
+document.querySelectorAll("a.navbar-item, #latest-posts li a").forEach((item) => {
+  const u = URL.parse(item.href, document.location);
+  if (u.pathname == "/") return;
+  if (document.location.href.startsWith(item.href)) {
+    item.classList.add('has-background-primary-soft');
+  }
 });
 </script>
