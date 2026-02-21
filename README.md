@@ -4,4 +4,6 @@ I'm using [Jekyll](https://jekyllrb.com/) as a framework, hosted by github (gith
 
 # Local dev server
 
-    bundle exec jekyll serve
+    # Onetime
+    direnv allow
+    serve

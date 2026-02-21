@@ -8,4 +8,8 @@ _*env*/
 css/*.css
 *.egg-info/
 .jekyll-cache/
-Gemfile.lock
+.jekyll-metadata
+.direnv/
+node/
+node_modules/
+package.json
