@@ -7,9 +7,11 @@ layout: default
   <div class="hero-body">
     <div class="container content">
       <div class="columns">
-        <div class=column>
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column is-1"></div>
+        <div class="column is-one-third">
           <p class="title is-1 is-bold">Nicolas Dumazet</p>
-          <h2 class="subtitle code-font">a.k.a. nicdumz</h2>
+          <h2 class="subtitle code-font has-text-white">a.k.a. nicdumz</h2>
         </div>
       </div>
       <div class="columns">
@@ -28,9 +30,12 @@ layout: default
 <section id="inside" class="hero is-fullheight">
   <section class="hero is-primary">
     <div class="hero-body">
-      <div class="container is-vcentered">
-            <p class="title">Yet another personal website</p>
-            <p class="subtitle">Geeks build those all the time</p>
+      <div class="container columns">
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column">
+            <p class="title has-text-white">Yet another personal website</p>
+            <p class="subtitle has-text-white">Geeks build those all the time</p>
+        </div>
       </div>
     </div>
   </section>
@@ -38,9 +43,10 @@ layout: default
   <section class="section is-medium">
     <div class="container">
       <div class="columns">
+        <div class="column is-1"></div>
         <!-- spacer, only for long wide screens -->
         <div class="column is-1 is-hidden-mobile"></div>
-        <div class="column content">
+        <div class="column content is-vcentered">
             <p>I used to live in busy Tokyo. Home is now Zürich, in the middle of the Swiss mountains.</p>
 
             <p>I work for Google. I spent quite some time with the team in charge of Search Infrastructure behind Image Search. That meant everything which needed to happen in order to serve content on <span class="code-font">images.google.com</span>, from crawling to indexing. My current team specializes in <a href="https://sre.google/books/">Reliability</a>. We run safely and reliably Security Infrastructure backends for Google Cloud and Google-internal applications.</p>
@@ -53,6 +59,8 @@ layout: default
 
             <p>There isn't much here, besides a desolated, neglected technical <span class="icon is-small"><i class="fas fa-paper-plane" aria-hidden="true"></i></span> <a class="is-link" href="/blog/">Blog</a>. Maintaining this site is mostly a nice excuse to force myself to read every other year about the latest web trends, though. Responsive. 2.0. All that jazz. Yay. Aren't we excited now.</p>
         </div>
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column is-1"></div>
       </div>
     </div>
   </section>
@@ -69,8 +77,8 @@ layout: default
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <p class="title">Curious about things?</p>
-        <p class="subtitle">I understand</p>
+        <p class="title has-text-white">Curious about things?</p>
+        <p class="subtitle has-text-white">I understand</p>
       </div>
     </div>
   </section>
@@ -78,6 +86,9 @@ layout: default
   <section class="section is-medium">
     <div class="container">
       <div class="columns">
+        <div class="column is-1"></div>
+        <!-- spacer, only for long wide screens -->
+        <div class="column is-1 is-hidden-mobile"></div>
         <div class="column content">
             <ul>
                 <li>This website is hosted via <a href="https://pages.github.com/">GitHub pages</a>.</li>
@@ -89,6 +100,8 @@ layout: default
                 </ul>
 
         </div>
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column is-1"></div>
       </div>
     </div>
   </section>
@@ -105,9 +118,13 @@ layout: default
 <section id="contact" class="hero is-fullheight">
 <section class="hero is-info">
   <div class="hero-body">
-    <div class="container has-text-right">
+    <div class="container has-text-right columns">
+      <div class="column">
           <p class="title">Want to chat?</p>
           <p class="subtitle">Let's try, it can't be that bad</p>
+      </div>
+      <div class="column is-1 is-hidden-mobile"></div>
+      <div class="column is-1"></div>
     </div>
   </div>
 </section>
@@ -120,38 +137,37 @@ layout: default
         <img src="assets/images/nonfree/social-anxiety.gif" title="Actually, I'm really not that bad, but enjoyed the awkard times in that serie. A lot."/>
       </div>
     </div>
-    <div class="columns is-vcentered is-mobile">
-      <div class="column has-text-centered notification is-primary is-offset-one-quarter-desktop is-half-desktop is-one-third-tablet is-offset-one-third-tablet">
+    <div class="columns is-centered is-mobile">
+      <div class="column has-text-centered notification is-primary is-two-thirds">
         Please, have some more of my sarcasm.
       </div>
     </div>
-
-    <div class="columns has-text-centered">
-      <div class="columns column is-offset-one-quarter-desktop is-half-desktop is-offset-one-third-tablet is-one-third-tablet">
-
-        <div class="column columns is-mobile is-gapless">
-
+    <div class="columns is-centered is-mobile"></div>
+      <div class="column is-two-thirds"></div>
+        <div class="columns column is-mobile">
+          <div class="column is-1 is-hidden-mobile"></div>
+          <div class="column is-1"></div>
           <div class="column">
-            <a class="button is-medium" href="https://github.com/nicdumz" title="github profile">
+            <a class="button is-medium is-responsive" href="https://github.com/nicdumz" title="github profile">
             <span class=icon><i class="fab fa-github" aria-hidden="true"></i></span><span>GitHub</span>
             </a>
           </div><div class="column">
-            <a class="button is-medium" href="https://linkedin.com/in/ndumazet" title="linkedin profile">
+            <a class="button is-medium is-responsive" href="https://linkedin.com/in/ndumazet" title="linkedin profile">
             <span class=icon><i class="fab fa-linkedin" aria-hidden="true"></i></span><span>linkedin</span>
             </a>
           </div>
-
-        </div><div class="column columns is-mobile is-gapless">
-
           <div class="column">
-            <a class="button is-medium" href="mailto:nicdumz@gmail.com" title="email">
+            <a class="button is-medium is-responsive" href="mailto:nicdumz@gmail.com" title="email">
             <span class=icon><i class="fas fa-envelope" aria-hidden="true"></i></span><span>email</span>
             </a>
           </div>
-
+          <div class="column is-1"></div>
+          <div class="column is-1 is-hidden-mobile"></div>
         </div>
-
       </div>
+    </div>
+
+
     </div>
   </div>
 </section>

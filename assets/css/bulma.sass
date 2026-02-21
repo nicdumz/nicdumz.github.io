@@ -29,45 +29,61 @@ $base-16-flat-0E: #9B59B6
 $base-16-flat-0F: #be643c
 
 $turquoise: $base-16-flat-0C
-$primary: $turquoise
 $blue: $base-16-flat-01
-$info: $blue
 $green: $base-16-flat-0B
-$success: $green
 $yellow: $base-16-flat-09
-$warning: $yellow
 $red: $base-16-flat-08
-$danger: $red
-$purple: $base-16-flat-0E
-
-$grey-darker: $base-16-flat-00
-$dark: $grey-darker
-$grey-dark: $base-16-flat-02
-$text: $grey-dark
-$grey: $base-16-flat-03
-$grey-light: $base-16-flat-04
-$grey-lighter: $base-16-flat-06
 
 // If I were lazy:
-// @import "bulma/bulma"
-@import "bulma/sass/utilities/_all.sass"
-$link: $turquoise
-$link-invert: $turquoise-invert
-$title-weight: 400
-$subtitle-weight: 400
-$content-heading-weight: 400
-$timeline-icon-size: $size-7
-// $weight-semibold: 500
-// $weight-bold: 600
-@import "bulma/sass/base/_all.sass"
-@import "bulma/sass/components/level.sass"
-@import "bulma/sass/components/menu.sass"
-@import "bulma/sass/components/navbar.sass"
-@import "bulma/sass/components/tabs.sass"
-@import "bulma/sass/elements/_all.sass"
-@import "bulma/sass/grid/columns.sass"
-@import "bulma/sass/layout/hero.sass"
-@import "bulma/sass/layout/section.sass"
+// @forward "bulma/bulma"
+@use "bulma/sass/utilities" as bu with (
+  $primary: $turquoise,
+  $link: $turquoise,
+  $success: $green,
+  $info: $blue,
+  $warning: $yellow,
+  $dark: $base-16-flat-00,
+  $text: $base-16-flat-02,
+  // // $turquoise: $turquoise,
+  // $blue: $blue,
+  // $green: $green,
+  // $yellow: $yellow,
+  // $red: $red,
+  // $danger: $red,
+  // $purple: $base-16-flat-0E,
+
+  // $grey-darker: $base-16-flat-00,
+  $grey-dark: $base-16-flat-02,
+  // $grey: $base-16-flat-03,
+  $grey-light: $base-16-flat-04,
+  // $grey-lighter: $base-16-flat-06,
+
+  // $weight-semibold: 500
+  // $weight-bold: 600
+
+  $family-sans-serif: ("Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif),
+)
+// Only relevent to timeline extension
+// TODO: figure out how to pass that.
+$timeline-icon-size: bu.$size-7
+@forward "bulma/sass/base"
+@forward "bulma/sass/components/menu"
+@forward "bulma/sass/components/navbar"
+@forward "bulma/sass/components/tabs"
+@use "bulma/sass/elements" with (
+  $content-heading-weight: 400,
+  $subtitle-weight: 400,
+  $title-color: bu.$white,
+  $title-weight: 400,
+)
+@forward "bulma/sass/grid/columns"
+@forward "bulma/sass/layout/hero"
+@forward "bulma/sass/layout/level"
+@forward "bulma/sass/layout/section"
+
+@forward "bulma/sass/helpers"
+@forward "bulma/sass/themes"
+
 
 .code-font
   -moz-osx-font-smoothing: auto
@@ -75,16 +91,22 @@ $timeline-icon-size: $size-7
   font-family: "Inconsolata", "Consolas", "Monaco", monospace
 
 // Augment bulma icon sizes with a is-tiny class
-.icon.is-tiny
-  +fa(7px, .5rem)
+// TODO FIXME
+//  .icon.is-tiny
+//    +fa(7px, .5rem)
 
 .syntax_highlight pre
-  background-color: $grey-darker
-  color: $grey-lighter
-  font-size: $size-normal
+  background-color: bu.$grey-darker
+  color: bu.$grey-lighter
+  font-size: bu.$size-normal
 
 // Yes I feel bad, thanks for asking.
 .syntax_highlight
   width: 80%
   margin: 2% 0% 2% 5%
   padding: 1%1
+
+// Bulma pre 1.0 used to allow this, customizing it myself.
+.button.is-primary:hover
+  background-color: $turquoise
+  color: bu.$white
