@@ -3,25 +3,26 @@ layout: default
 ---
 
 <nav class="navbar">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <p class="title has-text-primary-bold">Nicolas Dumazet</p>
-    </a>
-    <!-- This "navbar-burger" hamburger menu is only visible on mobile -->
-    <!-- JavaScript toggles the "is-active" class on "navbar-menu" -->
-    <a role="button" id="navbar-burger" class="navbar-burger">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+  <div class="container is-max-widescreen px-5"> 
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <p class="title has-text-primary-bold">Nicolas Dumazet</p>
+      </a>
+      
+      <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-  <div id="navbar-menu" class="navbar-menu">
-    <div class="navbar-end">
-      <a class="navbar-item" href="/">Home</a>
-      <a class="navbar-item" href="/blog/">Blog</a>
-      <a class="navbar-item" href="/#about">About</a>
-      <a class="navbar-item" href="/#contact">Contact</a>
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/">Home</a>
+        <a class="navbar-item" href="/blog/">Blog</a>
+        <a class="navbar-item" href="/#about">About</a>
+        <a class="navbar-item" href="/#contact">Contact</a>
+      </div>
     </div>
   </div>
 </nav>

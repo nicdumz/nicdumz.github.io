@@ -63,6 +63,8 @@ $red: $base-16-flat-08
 
   $family-sans-serif: ("Inter", system-ui, -apple-system, sans-serif),
 )
+@use "bulma/sass/utilities/mixins" as mx
+
 // Only relevent to timeline extension
 // TODO: figure out how to pass that.
 $timeline-icon-size: bu.$size-7
@@ -136,3 +138,26 @@ $timeline-icon-size: bu.$size-7
 /* 2026 Typography: Slightly tighter letter spacing for large titles */
 .title 
   letter-spacing: -0.02em
+
+.section.pt-4
+  padding-top: 2rem !important
+
+// Tighten the internal space of the blog card
+.blog_post
+  &.box
+    // padding-top: 1rem !important // Bulma default is 1.25rem
+    
+    // Remove the content-driven margin from the very first title
+    header
+      .blog_post_title
+        margin-top: 0 !important
+
+article
+  --article-margin: 0.5rem
+  --article-padding-bottom: 0.5rem
+  margin-bottom: var(--article-margin) !important
+  padding-bottom: var(--article-padding-bottom) !important
+
+  +mx.tablet
+    --article-margin: 1rem
+    --article-padding-bottom: 1rem
