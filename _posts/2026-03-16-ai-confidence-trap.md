@@ -37,7 +37,7 @@ evaluated or great for lengthy interactions yet. It started getting stuck on ear
 chat and losing its ability to make sense of new information.
 
 By the time we discussed currency risks (CHF/USD), it had completely lost the plot. To "prove" that
-currency hedging was cheap, it hallucinated an ISIN for a "CHF-hedged S\&P 500" ETF. (In reality,
+currency hedging was cheap, it hallucinated an ISIN for a "CHF-hedged S&P 500" ETF. (In reality,
 the ISIN pointed to an unrelated – but cheap – UBS green energy fund).
 
 The model then used that green fund’s ultra-low TER (0.06%) as the "cost" of currency hedging, while
