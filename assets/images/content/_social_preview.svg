@@ -5,7 +5,7 @@
    viewBox="0 0 1200 630"
    version="1.1"
    id="svg4"
-   sodipodi:docname="gemini-svg.svg"
+   sodipodi:docname="_social_preview.svg"
    inkscape:export-filename="social-preview.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -23,10 +23,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.81494057"
-     inkscape:cx="493.28751"
-     inkscape:cy="103.075"
-     inkscape:window-width="1512"
+     inkscape:zoom="1.6298811"
+     inkscape:cx="502.49063"
+     inkscape:cy="217.80729"
+     inkscape:window-width="3038"
      inkscape:window-height="1656"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -58,7 +58,7 @@
      fill="url(#grid)"
      id="rect2" />
   <g
-     transform="translate(540, 150) scale(5)"
+     transform="matrix(8.2647172,0,0,8.2647172,500.82339,106.40881)"
      id="g3">
     <circle
        cx="4.8000002"
@@ -77,31 +77,31 @@
        fill="none"
        id="circle3" />
     <path
-       d="M6 18V6l12 12V6"
+       d="M 6,18 V 6 L 18,18 V 6"
        stroke="#00d1b2"
        stroke-width="1.5"
        fill="none"
        id="path3" />
   </g>
-  <text
-     x="600"
-     y="450"
-     text-anchor="middle"
-     font-family="Inter, sans-serif"
-     font-size="60"
-     font-weight="700"
-     fill="white"
-     id="text3">
-    Nicolas Dumazet
-  </text>
-  <text
-     x="600"
-     y="510"
-     text-anchor="middle"
-     font-family="JetBrains Mono, monospace"
-     font-size="30"
-     fill="#00d1b2"
-     id="text4">
-    &gt; infrastructure • integrity • sarcasm
-  </text>
+  <g
+     id="g1"
+     transform="matrix(1.4604165,0,0,1.4604165,-276.14294,-199.77997)">
+    <text
+       x="600"
+       y="510"
+       text-anchor="middle"
+       font-family="'JetBrains Mono', monospace"
+       font-size="30px"
+       fill="#00d1b2"
+       id="text4">&gt; infrastructure • integrity • sarcasm</text>
+    <text
+       x="600"
+       y="450"
+       text-anchor="middle"
+       font-family="Inter, sans-serif"
+       font-size="60px"
+       font-weight="700"
+       fill="#ffffff"
+       id="text3">Nicolas Dumazet</text>
+  </g>
 </svg>
