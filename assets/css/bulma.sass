@@ -110,3 +110,21 @@ $timeline-icon-size: bu.$size-7
 .button.is-primary:hover
   background-color: $turquoise
   color: bu.$white
+
+/* --- Custom Readability Tweaks --- */
+
+/* 1. Improve the 'Measure' and vertical rhythm */
+.post_prose, .section .content
+  line-height: 1.65
+  
+  p
+    margin-bottom: 1.5rem
+
+/* 2. Refine the GIF / Social Anxiety Image */
+#contact img
+  border-radius: 8px
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1)
+  transition: transform 0.3s ease
+  
+  &:hover
+    transform: scale(1.02)
