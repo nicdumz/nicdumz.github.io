@@ -44,22 +44,8 @@ $red: $base-16-flat-08
   $warning: $yellow,
   $dark: $base-16-flat-00,
   $text: $base-16-flat-02,
-  // // $turquoise: $turquoise,
-  // $blue: $blue,
-  // $green: $green,
-  // $yellow: $yellow,
-  // $red: $red,
-  // $danger: $red,
-  // $purple: $base-16-flat-0E,
-
-  // $grey-darker: $base-16-flat-00,
   $grey-dark: $base-16-flat-02,
-  // $grey: $base-16-flat-03,
   $grey-light: $base-16-flat-04,
-  // $grey-lighter: $base-16-flat-06,
-
-  // $weight-semibold: 500
-  // $weight-bold: 600
 
   $family-sans-serif: ("Inter", system-ui, -apple-system, sans-serif),
 )
@@ -92,10 +78,10 @@ $timeline-icon-size: bu.$size-7
   -webkit-font-smoothing: auto
   font-family: 'JetBrains Mono', monospace;
 
-// Augment bulma icon sizes with a is-tiny class
-// TODO FIXME
-//  .icon.is-tiny
-//    +fa(7px, .5rem)
+.button .icon svg
+  width: 90%
+  height: 90%
+  stroke-width: 1px // Adjust for a "thicker" or "thinner" look
 
 .syntax_highlight pre
   background-color: bu.$grey-darker
