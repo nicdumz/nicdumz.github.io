@@ -61,7 +61,7 @@ $red: $base-16-flat-08
   // $weight-semibold: 500
   // $weight-bold: 600
 
-  $family-sans-serif: ("Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif),
+  $family-sans-serif: ("Inter", system-ui, -apple-system, sans-serif),
 )
 // Only relevent to timeline extension
 // TODO: figure out how to pass that.
@@ -85,10 +85,10 @@ $timeline-icon-size: bu.$size-7
 @forward "bulma/sass/themes"
 
 
-.code-font
+.code-font, code, pre
   -moz-osx-font-smoothing: auto
   -webkit-font-smoothing: auto
-  font-family: "Inconsolata", "Consolas", "Monaco", monospace
+  font-family: 'JetBrains Mono', monospace;
 
 // Augment bulma icon sizes with a is-tiny class
 // TODO FIXME
@@ -128,3 +128,11 @@ $timeline-icon-size: bu.$size-7
   
   &:hover
     transform: scale(1.02)
+
+/* Gemini wants more transparency \o/ */
+.has-text-white
+  color: rgba(255, 255, 255, 0.94) !important
+
+/* 2026 Typography: Slightly tighter letter spacing for large titles */
+.title 
+  letter-spacing: -0.02em
