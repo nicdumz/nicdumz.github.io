@@ -150,9 +150,10 @@ article
 
 .about-list
   display: grid
-  // Fixed 3rem column for icons, the rest for text
-  grid-template-columns: 3rem 1fr
-  gap: 1.5rem 0 // Vertical gap between items
+  // Col 1: Fixed 3rem (48px) for icons | Col 2: The rest for text
+  grid-template-columns: 3rem 1fr 
+  // Vertical gap between your items
+  row-gap: 2rem 
   align-items: start
 
   .list-icon
@@ -160,5 +161,7 @@ article
     justify-content: center
     
   .list-text
-    // Ensures text never wraps under the icon (hanging indent)
     padding-left: 0.5rem
+    
+    p
+      margin-bottom: 0 !important // Prevents Bulma from adding extra bottom space
