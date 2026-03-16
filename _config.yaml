@@ -2,6 +2,7 @@
 sass:
   style: compact # possible values: nested expanded compact compressed
 permalink: /blog/:year/:month/:title
+timezone: Europe/Zurich
 defaults:
   - scope:
       path: "assets/images"
