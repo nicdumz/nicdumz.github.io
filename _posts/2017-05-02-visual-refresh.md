@@ -1,5 +1,5 @@
 ---
-tags: bulma responsive
+tags: website tech bulma responsive
 date: 05/02/2017 15:15
 title: Visual refresh
 ---

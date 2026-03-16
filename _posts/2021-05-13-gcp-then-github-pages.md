@@ -1,6 +1,7 @@
 ---
 date: 13/05/2021 15:00
 title: GCP then Github Pages
+tags: website tech
 ---
 
 Earlier this year I spent a fair amount of time trying to setup a Kubernetes

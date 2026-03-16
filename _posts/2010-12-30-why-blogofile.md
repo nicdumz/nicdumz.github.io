@@ -1,6 +1,6 @@
 ---
 categories: Python
-tags: blogofile
+tags: blogofile website tech
 date: 30/12/2010 15:15
 title: Why Blogofile?
 ---
