@@ -5,6 +5,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- lol IE -->
     <title>{%- if page.title == empty -%}Nicolas Dumazet{%- else -%}Nicolas Dumazet - {{ page.title }}{%- endif -%}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nicolas Dumazet">
+
+    {% if page.excerpt %}
+      {% assign og_desc = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+    {% elsif page.description %}
+      {% assign og_desc = page.description %}
+    {% else %}
+      {% assign og_desc = "Technical Ramblings of Nicolas Dumazet. Built with static simplicity and sarcasm." %}
+    {% endif %}
+    <meta property="og:description" content="{{ og_desc }}">
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <meta property="og:image" content="https://www.nicdumz.fr/assets/images/content/social-preview.png">
