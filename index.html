@@ -30,11 +30,12 @@ layout: default
 <section id="inside" class="hero is-fullheight">
   <section class="hero is-primary">
     <div class="hero-body">
-      <div class="container columns">
-        <div class="column is-1 is-hidden-mobile"></div>
-        <div class="column">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-9-tablet is-7-desktop is-6-widescreen">
             <p class="title has-text-white">Yet another personal website</p>
             <p class="subtitle has-text-white">Geeks build those all the time</p>
+          </div>
         </div>
       </div>
     </div>
@@ -43,22 +44,23 @@ layout: default
   <section class="section is-medium">
     <div class="container">
       <div class="columns is-centered">
-        <div class="column is-10-tablet is-8-desktop is-7-widescreen content is-vcentered">
-            <p>I used to live in busy Tokyo. Home is now Zürich, in the middle of the Swiss mountains.</p>
+        <div class="column is-9-tablet is-7-desktop is-6-widescreen content is-size-5-desktop">
+          <p>I used to live in busy Tokyo. Home is now Zürich, in the middle of the Swiss mountains.</p>
 
-            <p>I work for Google. I spent quite some time with the team in charge of Search Infrastructure behind Image Search. That meant everything which needed to happen in order to serve content on <span class="code-font">images.google.com</span>, from crawling to indexing. My current team specializes in <a href="https://sre.google/books/">Reliability</a>. We run safely and reliably Security Infrastructure backends for Google Cloud and Google-internal applications.</p>
+          <p>I work for Google. I spent quite some time with the team in charge of Search Infrastructure behind Image Search. That meant everything which needed to happen in order to serve content on <span class="code-font">images.google.com</span>, from crawling to indexing. My current team specializes in <a href="https://sre.google/books/">Reliability</a>. We run safely and reliably Security Infrastructure backends for Google Cloud and Google-internal applications.</p>
 
-            <p>I invested quite some time in my early 20s caring for, and contributing to, Open Source software. Since the decline of <a class="is-link" href="http://www.ohloh.net/accounts/nicdumz">Ohloh</a>, there's no great way to showcase such involvement. My <span class="icon is-small"><i class="fas fa-briefcase" aria-hidden="true"></i></span> <a href="/resume-dumazet.pdf" title="Resume">resume</a> will tell you the gist of it, along with more of my professional background. </p>
+          <p>I invested quite some time in my early 20s caring for, and contributing to, Open Source software. Since the decline of <a class="is-link" href="http://www.ohloh.net/accounts/nicdumz">Ohloh</a>, there's no great way to showcase such involvement. My <span class="icon is-small"><i class="fas fa-briefcase" aria-hidden="true"></i></span> <a href="/resume-dumazet.pdf" title="Resume">resume</a> will tell you the gist of it, along with more of my professional background. </p>
 
-            <p>Friends are likely to describe me as someone displaying a peculiar, dry, sarcastic sense of humor. So there's that. I mean, if something on here sounds strange, remember my warning: <em>&ldquo;it's not you, it's me&rdquo;</em>.</p>
+          <p>Friends are likely to describe me as someone displaying a peculiar, dry, sarcastic sense of humor. So there's that. I mean, if something on here sounds strange, remember my warning: <em>&ldquo;it's not you, it's me&rdquo;</em>.</p>
 
-            <p>Oh, and I'm French. Sorry. The only explanation I'll offer for that will come as a little story: I once happened to be waiting out a desert dust storm, philosophing on the meaning of life with a wise, and otherwise very pleasant old lady. Upon hearing of my origins, she commented: <em>nobody's perfect.</em></p>
+          <p>Oh, and I'm French. Sorry. The only explanation I'll offer for that will come as a little story: I once happened to be waiting out a desert dust storm, philosophing on the meaning of life with a wise, and otherwise very pleasant old lady. Upon hearing of my origins, she commented: <em>nobody's perfect.</em></p>
 
-            <p>There isn't much here, besides a desolated, neglected technical <span class="icon is-small"><i class="fas fa-paper-plane" aria-hidden="true"></i></span> <a class="is-link" href="/blog/">Blog</a>. Maintaining this site is mostly a nice excuse to force myself to read every other year about the latest web trends, though. Responsive. 2.0. All that jazz. Yay. Aren't we excited now.</p>
+          <p>There isn't much here, besides a desolated, neglected technical <span class="icon is-small"><i class="fas fa-paper-plane" aria-hidden="true"></i></span> <a class="is-link" href="/blog/">Blog</a>. Maintaining this site is mostly a nice excuse to force myself to read every other year about the latest web trends, though. Responsive. 2.0. All that jazz. Yay. Aren't we excited now.</p>
         </div>
       </div>
     </div>
   </section>
+
   <section class="section has-text-centered">
     <a class="button is-outlined is-info is-large is-hidden-mobile" href="#about">
       <span class="icon is-large">
@@ -71,9 +73,13 @@ layout: default
 <section id="about" class="hero is-fullheight">
   <section class="hero is-primary">
     <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title has-text-white">Curious about things?</p>
-        <p class="subtitle has-text-white">I understand</p>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-9-tablet is-7-desktop is-6-widescreen has-text-centered">
+            <p class="title has-text-white">Curious about things?</p>
+            <p class="subtitle has-text-white">I understand</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -81,19 +87,20 @@ layout: default
   <section class="section is-medium">
     <div class="container">
       <div class="columns is-centered">
-        <div class="column is-10-tablet is-8-desktop is-7-widescreen content">
-            <ul>
-                <li>This website is hosted via <a href="https://pages.github.com/">GitHub pages</a>.</li>
-                <li>I believe in plain, static html pages when relevant, which is why this website is purely static. I don't necessarily need to handcraft every single page though, which is why I use a static site generators. The current version uses <a href="https://jekyllrb.com/">Jekyll</a>, I used Blogofile in the past.</li>
-                <li><a href="http://bulma.io">Bulma</a> CSS framework was of great help for layout and styling, since I have very poor UI skills.</li>
-                <li>Source available on <a href="https://github.com/nicdumz/nicdumz.github.io" title="github repository">Github</a>.</li>
-                <li>Content built using Free Software (Vim, Gimp, Inkscape, ...).</li>
-                <li>Most of the content is available under Creative Commons-By 3.0, please check LICENSE.txt file in the source for details.</li>
-            </ul>
+        <div class="column is-9-tablet is-7-desktop is-6-widescreen content is-size-5-desktop">
+          <ul>
+            <li>This website is hosted via <a href="https://pages.github.com/">GitHub pages</a>.</li>
+            <li>I believe in plain, static html pages when relevant, which is why this website is purely static. I don't necessarily need to handcraft every single page though, which is why I use a static site generators. The current version uses <a href="https://jekyllrb.com/">Jekyll</a>, I used Blogofile in the past.</li>
+            <li><a href="http://bulma.io">Bulma</a> CSS framework was of great help for layout and styling, since I have very poor UI skills.</li>
+            <li>Source available on <a href="https://github.com/nicdumz/nicdumz.github.io" title="github repository">Github</a>.</li>
+            <li>Content built using Free Software (Vim, Gimp, Inkscape, ...).</li>
+            <li>Most of the content is available under Creative Commons-By 3.0, please check LICENSE.txt file in the source for details.</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
+
   <section class="section has-text-centered">
     <a class="button is-outlined is-info is-large is-hidden-mobile" href="#contact">
       <span class="icon is-large">
@@ -103,15 +110,16 @@ layout: default
   </section>
 </section>
 
-
 <section id="contact" class="hero is-fullheight">
   <div class="hero-head">
     <section class="hero is-info">
       <div class="hero-body">
-        <div class="container columns is-centered">
-          <div class="column is-10-tablet is-8-desktop is-7-widescreen has-text-right">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-9-tablet is-7-desktop is-6-widescreen has-text-right">
               <p class="title">Want to chat?</p>
               <p class="subtitle">Let's try, it can't be that bad</p>
+            </div>
           </div>
         </div>
       </div>
@@ -119,33 +127,42 @@ layout: default
   </div>
 
   <div class="hero-body">
-    <div class="container has-text-centered">
-      
+    <div class="container">
       <div class="columns is-centered">
-        <div class="column is-narrow">
-          <img src="assets/images/nonfree/social-anxiety.gif" 
-               title="Actually, I'm really not that bad..."/>
+        <div class="column is-9-tablet is-7-desktop is-6-widescreen has-text-centered">
+          
+          <div class="columns is-centered mb-6">
+            <div class="column is-narrow">
+              <figure class="image">
+                <img src="assets/images/nonfree/social-anxiety.gif" 
+                     title="Actually, I'm really not that bad..." >
+              </figure>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <p class="is-size-4 has-text-weight-light">
+              Please, have some more of my sarcasm.
+            </p>
+          </div>
+
+          <div class="buttons is-centered mt-5">
+            <a class="button is-medium is-link is-outlined is-responsive" href="https://github.com/nicdumz" title="github profile">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </a>
+            <a class="button is-medium is-link is-outlined is-responsive" href="https://linkedin.com/in/ndumazet" title="linkedin profile">
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="button is-medium is-link is-outlined is-responsive" href="mailto:nicdumz@gmail.com" title="email">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Email</span>
+            </a>
+          </div>
+
         </div>
       </div>
-
-      <div class="columns is-centered">
-        <div class="column is-10-tablet is-6-desktop notification is-primary">
-          Please, have some more of my sarcasm.
-        </div>
-      </div>
-
-      <div class="buttons is-centered mt-5">
-        <a class="button is-medium is-responsive" href="https://github.com/nicdumz" title="github profile">
-          <span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>GitHub</span>
-        </a>
-        <a class="button is-medium is-responsive" href="https://linkedin.com/in/ndumazet" title="linkedin profile">
-          <span class="icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span><span>LinkedIn</span>
-        </a>
-        <a class="button is-medium is-responsive" href="mailto:nicdumz@gmail.com" title="email">
-          <span class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></span><span>Email</span>
-        </a>
-      </div>
-
     </div>
   </div>
 </section>
