@@ -58,7 +58,6 @@ jobs:
           command: pages deploy ./_site --project-name=nicdumz-fr-static
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
-
   # Deployment job
   deploy:
     environment:
