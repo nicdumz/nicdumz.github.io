@@ -83,7 +83,7 @@ backend can play tricks on us.
 
 I version everything in a [Mercurial
 repository](https://bitbucket.org/nicdumz/website) (_edit from the future_:
-moved to [Git and GitHub](https://github.com/nicdumz/nicdumz.github.io)).
+moved to [Git and GitHub](https://github.com/nicdumz/nicdumz.fr)).
 
 _&#8220;Backups&#8221;_ are achieved with a simple `hg clone`.
 
